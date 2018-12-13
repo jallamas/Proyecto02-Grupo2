@@ -6,14 +6,13 @@ public class Actividades {
 
 	private String enunciado;
 	private int tipo; // 0 para "preguntas normales" ó 1 para "Retos y Preguntas específicas"
-	private int puntos; // Valor de la repuesta correcta
-	private String [][]respuestas;
+	private static int puntos; // Valor de la repuesta correcta
+	private String []respuestas;
 	
 	
-	public Actividades(String enunciado, int tipo, int puntos, String[][] respuestas) {
+	public Actividades(String enunciado, int tipo, int puntos, String[] respuestas) {
 		this.enunciado = enunciado;
 		this.tipo = tipo;
-		this.puntos = puntos;
 		this.respuestas = respuestas;
 	}
 
@@ -38,22 +37,22 @@ public class Actividades {
 	}
 
 
-	public int getPuntos() {
+	public static int getPuntos() {
 		return puntos;
 	}
 
 
-	public void setPuntos(int puntos) {
-		this.puntos = puntos;
+	public static void setPuntos(int puntos) {
+		Actividades.puntos = puntos;
 	}
 
 
-	public String[][] getRespuestas() {
+	public String[] getRespuestas() {
 		return respuestas;
 	}
 
 
-	public void setRespuestas(String[][] respuestas) {
+	public void setRespuestas(String[] respuestas) {
 		this.respuestas = respuestas;
 	}
 

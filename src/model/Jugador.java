@@ -3,13 +3,15 @@ package model;
 public class Jugador {
 
 	private String nombre;
-	private int puntuacion, comodines;
+	private int puntuacion;
+	private static int comodines;
 	private boolean eleccion;//True si ha elegido pregunta y false si es reto
 
-	public Jugador(String nombre, int puntuacion, int comodines, boolean eleccion) {
+
+
+	public Jugador(String nombre, int puntuacion, boolean eleccion) {
 		this.nombre = nombre;
 		this.puntuacion = puntuacion;
-		this.comodines = comodines;
 		this.eleccion = eleccion;
 	}
 
@@ -29,12 +31,12 @@ public class Jugador {
 		this.puntuacion = puntuacion;
 	}
 
-	public int getComodines() {
+	public static int getComodines() {
 		return comodines;
 	}
 
-	public void setComodines(int comodines) {
-		this.comodines = comodines;
+	public static void setComodines(int comodines) {
+		Jugador.comodines = comodines;
 	}
 
 	public boolean isEleccion() {
