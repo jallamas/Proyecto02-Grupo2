@@ -7,7 +7,7 @@ public class Test {
 //		ImprimirVictoria.imprimirVictoria();
 //		ImprimirIntrucciones.imprimirInstrucciones();
 //		ImprimirCreditos.imprimirCreditos();
-		ImprimirIntroduccion.imprimirIntroduccion();
+	ImprimirIntroduccion.imprimirIntroduccion();
 	}
 
 }

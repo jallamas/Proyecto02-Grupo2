@@ -30,4 +30,15 @@ public class ImprimirIntrucciones {
 				"\t\t\t    \\_____\\/     \\_____\\/     \\_____\\/ \r\n" + 
 				"\t\t\t                                       ");
 	}
+	
+	public void imprimirGuia() {
+		System.out.println("1º:Elejimos el número de jugadores.");
+		System.out.println("2ºElejimos la puntuación.");
+		System.out.println("3º-Elejimos entre pregunta o reto(No te preocupes, se alternan automaticamente.)");
+		System.out.println("4º-Por cada pregunta o reto ganas puntos(Algunos retos requieren la valoración del resto de jugadores.)");
+		System.out.println("5º-Por cada pregunta o reto puedes ganar o robar un comodin a un jugador.");
+		System.out.println("6º-Los comodines valen para saltar preguntas o retos.");
+		System.out.println("7º-Cuando consigas los puntos, abras ganado.");
+		
+	}
 }
