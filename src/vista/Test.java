@@ -2,11 +2,12 @@ package vista;
 
 public class Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
-		ImprimirVictoria.imprimirVictoria();
+//		ImprimirVictoria.imprimirVictoria();
 //		ImprimirIntrucciones.imprimirInstrucciones();
-
+//		ImprimirCreditos.imprimirCreditos();
+		ImprimirIntroduccion.imprimirIntroduccion();
 	}
 
 }
