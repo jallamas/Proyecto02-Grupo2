@@ -5,13 +5,15 @@ public class Jugador {
 	private String nombre;
 	private int puntuacion;
 	private static int comodines;
+	private int comodinesactuales;
 	private boolean eleccion;//True si ha elegido pregunta y false si es reto
 
 
 
-	public Jugador(String nombre, int puntuacion, boolean eleccion) {
+	public Jugador(String nombre, int puntuacion,int comodinesactuales, boolean eleccion) {
 		this.nombre = nombre;
 		this.puntuacion = puntuacion;
+		this.comodinesactuales=comodinesactuales;
 		this.eleccion = eleccion;
 	}
 
@@ -37,6 +39,14 @@ public class Jugador {
 
 	public static void setComodines(int comodines) {
 		Jugador.comodines = comodines;
+	}
+
+	public int getComodinesactuales() {
+		return comodinesactuales;
+	}
+
+	public void setComodinesactuales(int comodinesactuales) {
+		this.comodinesactuales = comodinesactuales;
 	}
 
 	public boolean isEleccion() {
