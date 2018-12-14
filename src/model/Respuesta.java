@@ -1,14 +1,14 @@
-package datos;
+package model;
 
-public class Respuestas {
+public class Respuesta {
 	//atributos
 	String texto;
 	int verdaderoFalso;
 	
-	public Respuestas() {
+	public Respuesta() {
 		
 	}
-	public Respuestas(String texto, int verdaderoFalso) {
+	public Respuesta(String texto, int verdaderoFalso) {
 		super();
 		this.texto = texto;
 		this.verdaderoFalso = verdaderoFalso;

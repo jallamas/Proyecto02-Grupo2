@@ -1,18 +1,18 @@
-package datos;
+package model;
 
 import java.util.Arrays;
 
-public class Enunciados {
+public class Enunciado {
 
 	String enunciado;
 	int tipo;
-	Respuestas lista[];
+	Respuesta lista[];
 	
-	public Enunciados () {
+	public Enunciado () {
 		
 	}
 
-	public Enunciados(String enunciado, int tipo, Respuestas[] lista) {
+	public Enunciado(String enunciado, int tipo, Respuesta[] lista) {
 		super();
 		this.enunciado = enunciado;
 		this.tipo = tipo;
@@ -35,11 +35,11 @@ public class Enunciados {
 		this.tipo = tipo;
 	}
 
-	public Respuestas[] getLista() {
+	public Respuesta[] getLista() {
 		return lista;
 	}
 
-	public void setLista(Respuestas[] lista) {
+	public void setLista(Respuesta[] lista) {
 		this.lista = lista;
 	}
 
