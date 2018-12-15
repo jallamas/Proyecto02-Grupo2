@@ -48,5 +48,9 @@ public class Enunciado {
 		return "Enunciados [enunciado=" + enunciado + ", tipo=" + tipo + ", lista=" + Arrays.toString(lista) + "]";
 	}
 
+	// Método para mostrar una pregunta con sus respuestas
 	
+	public void imprimirPregunta() {
+		
+	}
 }

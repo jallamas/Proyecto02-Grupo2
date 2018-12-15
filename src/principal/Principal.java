@@ -1,8 +1,10 @@
 package principal;
 
+import vista.ImprimirIntroduccion;
+import vista.ImprimirIntrucciones;
 public class Principal {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException{
 		// Variables con valor fijo
 		int puntuacion = 0; // Puntos con los que comienza un jugador
 		int comodines = 1; // Número de comodines con los que comienza la partida un jugador
@@ -14,7 +16,17 @@ public class Principal {
 		double probRobarComodin = 0.2; // Porcentaje de probabilidad de que se te permita "robar" un comodín a un
 										// compañero al responder correctamente una pregunta
 		
+
+		ImprimirIntroduccion.imprimirIntroduccion();
 		
+		ImprimirIntrucciones.imprimirInstrucciones();
+	
+	
+	
+	
+	
+	
+	
 	}
 
 	

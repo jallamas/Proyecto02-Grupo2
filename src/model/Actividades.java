@@ -9,9 +9,6 @@ public class Actividades {
 	private static int puntos; // Valor de la repuesta correcta
 	private Respuesta []respuestas;
 	
-	
-
-
 
 	public Actividades(String enunciado, int tipo, Respuesta[] respuestas) {
 		this.enunciado = enunciado;
