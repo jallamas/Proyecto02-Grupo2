@@ -2,6 +2,9 @@ package principal;
 
 import vista.ImprimirIntroduccion;
 import vista.ImprimirIntrucciones;
+import datos.datosPreguntas;
+
+
 public class Principal {
 
 	public static void main(String[] args) throws InterruptedException{
@@ -21,7 +24,7 @@ public class Principal {
 		
 		ImprimirIntrucciones.imprimirInstrucciones();
 	
-	
+		
 	
 	
 	

@@ -3,12 +3,12 @@ package model;
 public class Respuesta {
 	//atributos
 	String texto;
-	int verdaderoFalso;
+	boolean verdaderoFalso;
 	
 	public Respuesta() {
 		
 	}
-	public Respuesta(String texto, int verdaderoFalso) {
+	public Respuesta(String texto, boolean verdaderoFalso) {
 		super();
 		this.texto = texto;
 		this.verdaderoFalso = verdaderoFalso;
@@ -19,10 +19,10 @@ public class Respuesta {
 	public void setTexto(String texto) {
 		this.texto = texto;
 	}
-	public int getVerdaderoFalso() {
+	public boolean getVerdaderoFalso() {
 		return verdaderoFalso;
 	}
-	public void setVerdaderoFalso(int verdaderoFalso) {
+	public void setVerdaderoFalso(boolean verdaderoFalso) {
 		this.verdaderoFalso = verdaderoFalso;
 	}
 	@Override

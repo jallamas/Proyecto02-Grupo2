@@ -7,11 +7,11 @@ public class Partida {
 	private int numjugadores,puntosVictoria,numMaxRondas;
 	private double probabilidadComodin,probabilidadRobarComodin;
 	private Jugador []jugadores;
-	private Enunciado []preguntas;
+	private Actividades []preguntas;
 	
 	
 	public Partida(int numjugadores, int puntosVictoria, int numMaxRondas, double probabilidadComodin,
-			double probabilidadRobarComodin, Jugador[] jugadores, Enunciado []preguntas) {
+			double probabilidadRobarComodin, Jugador[] jugadores, Actividades []preguntas) {
 		this.numjugadores = numjugadores;
 		this.puntosVictoria = puntosVictoria;
 		this.numMaxRondas = numMaxRondas;
@@ -81,12 +81,12 @@ public class Partida {
 	}
 
 
-	public Enunciado[] getPreguntas() {
+	public Actividades[] getPreguntas() {
 		return preguntas;
 	}
 
 
-	public void setPreguntas(Enunciado[] preguntas) {
+	public void setPreguntas(Actividades[] preguntas) {
 		this.preguntas = preguntas;
 	}
 
