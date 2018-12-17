@@ -4,16 +4,12 @@ import model.Actividades;
 import model.Respuesta;
 
 public class datosPreguntas {
-	
-	int preguntas [];
-	int retos [];
-	int tipo[];
-	
+		
 	private Respuesta[] a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,
 	a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50
 	,a51,a52,a53,a54,a55,a56,a57,a58,a59,a60;
 	
-	
+	// CREAMOS OBJETOS TIPO ACTIVIDADES, A LAS QUE LE PASAMOS LOS ENUNCIADOS, SU TIPO Y SUS RESPECTIVAS REPUESTAS
 	Actividades e1 = new Actividades("¿Cuándo acabó la segunda guerra mundial?", 0, a1);
 	Actividades e2 = new Actividades("¿Cuál es el río más largo del mundo?", 0, a2);
 	Actividades e3 = new Actividades("¿Quién es el autor de El Quijote?", 0, a3);
@@ -44,27 +40,13 @@ public class datosPreguntas {
 	Actividades e28 = new Actividades("¿Cuántos grados tiene un ángulo agudo?", 0, a28);
 	Actividades e29 = new Actividades("¿A qué estilo arquitectónico pertenece la catedral de Notre Damme de Paris?", 0, a29);
 	Actividades e30 = new Actividades("La ley de la gravitación universal fue descrita por:", 0, a30);
+	 
+	//TIPO 0 INDICA QUE SON ACTVIDADES TIPO PREGUNTAS
+	Actividades [] tipo0 = {e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,e23,e24,e25,e26,e27,e28,e29,e30};
 	
-	
-//	public void rellenarTipoPreguntas(int tipo) {
-//	int tam = 60;
-//	preguntas = new int [tam];
-//	retos = new int [tam];	
-//	
-//	if(tipo==0) {
-//		
-//		for(int i=0;i<preguntas.length;i++) {
-//			
-//		 Preguntas[]
-//			
-//		}
-//		
-//	}
-//	
-//		
-//	}
-	
-	//tipo= new int {e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,e23,e24,e25,e26,e27,e28,e29,e30};
+	//TIPO 1 INDICA QUE SON ACTVIDADES TIPO RETOS
+//	Actividades [] tipo1 = {e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,e23,e24,e25,e26,e27,e28,e29,e30};
+
 	
 	
 //	Actividades e31 = new Actividades("¿Cuál es la capital de Australia?", 0, a31);

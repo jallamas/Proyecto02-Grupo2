@@ -4,10 +4,12 @@ import model.Respuesta;
 
 public class datosRespuestas {
 	
+	//CREAMOS LAS RESPUESTAS A CADA PREGUNTA PASANDO EL TEXTO Y SI SON VERDADERAS O FALSAS
 	Respuesta r1 = new Respuesta ("1945",true);
 	Respuesta r2 = new Respuesta ("1939",false);
 	Respuesta r3 = new Respuesta ("1944",false);
 	Respuesta r4 = new Respuesta ("1936",false);
+	//CREAMOS UN ARRAY DONDE METEMOS LAS RESPUESTAS POSIBLES PARA LA ACTIVIDAD (EN ESTE CASO) 1.
 	Respuesta []a1={r1,r2,r3,r4};
 	
 	Respuesta r5 = new Respuesta ("El Nilo",false);
