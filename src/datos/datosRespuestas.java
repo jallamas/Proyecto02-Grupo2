@@ -3,12 +3,7 @@ package datos;
 import model.Respuesta;
 
 public class datosRespuestas {
-	
-	;
 
-//	
-//	lista [P1] = new Respuestas (texto,verdaderoFalso);
-//	
 	Respuesta r1 = new Respuesta ("1945",true);
 	Respuesta r2 = new Respuesta ("1939",false);
 	Respuesta r3 = new Respuesta ("1944",false);
