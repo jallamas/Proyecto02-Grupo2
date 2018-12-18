@@ -4,6 +4,7 @@ import model.Respuesta;
 
 public class datosRespuestas {
 	
+		
 	//CREAMOS LAS RESPUESTAS A CADA PREGUNTA PASANDO EL TEXTO Y SI SON VERDADERAS O FALSAS
 	Respuesta r1 = new Respuesta ("1945",true);
 	Respuesta r2 = new Respuesta ("1939",false);
@@ -25,7 +26,7 @@ public class datosRespuestas {
 	Respuesta []a3={r9,r10,r11,r12};
 
 	Respuesta r13 = new Respuesta ("Sandro Boticcelli",false);
-	Respuesta r14 = new Respuesta ("Miguel Ángel",false);
+	Respuesta r14 = new Respuesta ("Miguel Ãngel",false);
 	Respuesta r15 = new Respuesta ("Leonardo Da Vinci",true);
 	Respuesta r16 = new Respuesta ("Tiziano Vecellio",false);
 	Respuesta []a4={r13,r14,r15,r16};
@@ -36,27 +37,27 @@ public class datosRespuestas {
 	Respuesta r20 = new Respuesta ("Valencia",false);
 	Respuesta []a5={r17,r18,r19,r20};
 	
-	Respuesta r21 = new Respuesta ("Océano Atlántico",false);
-	Respuesta r22 = new Respuesta ("Océano Pacífico",true);
-	Respuesta r23 = new Respuesta ("Océano Índico",false);
-	Respuesta r24 = new Respuesta ("Océano Glacial Ártico",false);
+	Respuesta r21 = new Respuesta ("OcÃ©ano AtlÃ¡ntico",false);
+	Respuesta r22 = new Respuesta ("OcÃ©ano PacÃ­fico",true);
+	Respuesta r23 = new Respuesta ("OcÃ©ano Ãndico",false);
+	Respuesta r24 = new Respuesta ("OcÃ©ano Glacial Ãrtico",false);
 	Respuesta []a6={r21,r22,r23,r24};
 	
-	Respuesta r25 = new Respuesta ("Fútbol",false);
-	Respuesta r26 = new Respuesta ("Natación",false);
+	Respuesta r25 = new Respuesta ("FÃºtbol",false);
+	Respuesta r26 = new Respuesta ("NataciÃ³n",false);
 	Respuesta r27 = new Respuesta ("Rugby",false);
 	Respuesta r28 = new Respuesta ("Baloncesto",true);
 	Respuesta []a7={r25,r26,r27,r28};
 	
 	Respuesta r29 = new Respuesta ("Saturno",false);
 	Respuesta r30 = new Respuesta ("Urano",false);
-	Respuesta r31 = new Respuesta ("Júpiter",true);
+	Respuesta r31 = new Respuesta ("JÃºpiter",true);
 	Respuesta r32 = new Respuesta ("Neptuno",false);
 	Respuesta []a8={r29,r30,r31,r32};
 	
 	Respuesta r33 = new Respuesta ("Libra",true);
 	Respuesta r34 = new Respuesta ("Euro",false);
-	Respuesta r35 = new Respuesta ("Dólar",false);
+	Respuesta r35 = new Respuesta ("DÃ³lar",false);
 	Respuesta r36 = new Respuesta ("Peso",false);
 	Respuesta []a9={r33,r34,r35,r36};
 	
@@ -67,7 +68,7 @@ public class datosRespuestas {
 	Respuesta []a10={r37,r38,r39,r40};
 	
 	Respuesta r41 = new Respuesta ("Francia",false);
-	Respuesta r42 = new Respuesta ("España",false);
+	Respuesta r42 = new Respuesta ("EspaÃ±a",false);
 	Respuesta r43 = new Respuesta ("Italia",false);
 	Respuesta r44 = new Respuesta ("Alemania",true);
 	Respuesta []a11={r41,r42,r43,r44};
@@ -79,7 +80,7 @@ public class datosRespuestas {
 	Respuesta []a12={r45,r46,r47,r48};
 
 	Respuesta r49 = new Respuesta ("Equilatero",true);
-	Respuesta r50 = new Respuesta ("Isósceles",false);
+	Respuesta r50 = new Respuesta ("IsÃ³sceles",false);
 	Respuesta r51 = new Respuesta ("Escaleno",false);
 	Respuesta []a13={r49,r50,r51};
 	
@@ -107,10 +108,10 @@ public class datosRespuestas {
 	Respuesta r67 = new Respuesta ("Brisbane",false);
 	Respuesta []a17={r64,r65,r66,r67};
 	
-	Respuesta r68 = new Respuesta ("Pitón reticulada",true);
+	Respuesta r68 = new Respuesta ("PitÃ³n reticulada",true);
 	Respuesta r69 = new Respuesta ("Anaconda verde",false);
-	Respuesta r70 = new Respuesta ("Pitón Birmana",false);
-	Respuesta r71 = new Respuesta ("Pitón Rock Africana",false);
+	Respuesta r70 = new Respuesta ("PitÃ³n Birmana",false);
+	Respuesta r71 = new Respuesta ("PitÃ³n Rock Africana",false);
 	Respuesta []a18={r68,r69,r70,r71};
 	
 	Respuesta r72 = new Respuesta ("Tajo",true);
@@ -120,14 +121,14 @@ public class datosRespuestas {
 	Respuesta []a19={r72,r73,r74,r75};
 	
 	Respuesta r76 = new Respuesta ("Brasil",false);
-	Respuesta r77 = new Respuesta ("República Popular China",false);
+	Respuesta r77 = new Respuesta ("RepÃºblica Popular China",false);
 	Respuesta r78 = new Respuesta ("Rusia",true);
-	Respuesta r79 = new Respuesta ("Canadá",false);
+	Respuesta r79 = new Respuesta ("CanadÃ¡",false);
 	Respuesta []a20={r76,r77,r78,r79};
 	
 	Respuesta r80 = new Respuesta ("Estocolmo",true);
 	Respuesta r81 = new Respuesta ("Gotemburgo",false);
-	Respuesta r82 = new Respuesta ("Malmö",false);
+	Respuesta r82 = new Respuesta ("MalmÃ¶",false);
 	Respuesta r83 = new Respuesta ("Helsingborg",false);
 	Respuesta []a21={r80,r81,r82,r83};
 	
@@ -137,8 +138,8 @@ public class datosRespuestas {
 	Respuesta r87 = new Respuesta ("Leoniense",false);
 	Respuesta []a22={r84,r85,r86,r87};
 	
-	Respuesta r88 = new Respuesta ("En embellecer la oración añadiendo información",false);
-	Respuesta r89 = new Respuesta ("En alterar el orden lógico de la oración",false);
+	Respuesta r88 = new Respuesta ("En embellecer la oraciÃ³n aÃ±adiendo informaciÃ³n",false);
+	Respuesta r89 = new Respuesta ("En alterar el orden lÃ³gico de la oraciÃ³n",false);
 	Respuesta r90 = new Respuesta ("En mezclar partes de palabra para formar una nueva",false);
 	Respuesta r91 = new Respuesta ("En aumentar o disminuir la verdad de lo hablado",true);
 	Respuesta []a23={r88,r89,r90,r91};
@@ -156,15 +157,15 @@ public class datosRespuestas {
 	Respuesta []a25={r96,r97,r98,r99};
 	
 	Respuesta r100 = new Respuesta ("Transparencia",false);
-	Respuesta r101 = new Respuesta ("Refracción",true);
-	Respuesta r102 = new Respuesta ("Dispersión",false);
-	Respuesta r103 = new Respuesta ("Reflexión",false);
+	Respuesta r101 = new Respuesta ("RefracciÃ³n",true);
+	Respuesta r102 = new Respuesta ("DispersiÃ³n",false);
+	Respuesta r103 = new Respuesta ("ReflexiÃ³n",false);
 	Respuesta []a26={r100,r101,r102,r103};
 	
 	Respuesta r104 = new Respuesta ("Albacetano",false);
 	Respuesta r105 = new Respuesta ("Albacetense",false);
-	Respuesta r106 = new Respuesta ("Albacereño",false);
-	Respuesta r107 = new Respuesta ("Albaceteño",true);
+	Respuesta r106 = new Respuesta ("AlbacereÃ±o",false);
+	Respuesta r107 = new Respuesta ("AlbaceteÃ±o",true);
 	Respuesta []a27={r104,r105,r106,r107};
 	
 	Respuesta r108 = new Respuesta ("Menos de 90",true);
@@ -173,10 +174,10 @@ public class datosRespuestas {
 	Respuesta r111 = new Respuesta ("360",false);
 	Respuesta []a28={r108,r109,r110,r111};
 	
-	Respuesta r112 = new Respuesta ("Neoclásico",false);
-	Respuesta r113 = new Respuesta ("Románico",false);
+	Respuesta r112 = new Respuesta ("NeoclÃ¡sico",false);
+	Respuesta r113 = new Respuesta ("RomÃ¡nico",false);
 	Respuesta r114 = new Respuesta ("Fenicio",false);
-	Respuesta r115 = new Respuesta ("Gótico",true);
+	Respuesta r115 = new Respuesta ("GÃ³tico",true);
 	Respuesta []a29={r112,r113,r114,r115};
 	
 	Respuesta r116 = new Respuesta ("William Henry",false);
@@ -184,7 +185,6 @@ public class datosRespuestas {
 	Respuesta r118 = new Respuesta ("Daniel Bernoulli",false);
 	Respuesta r119 = new Respuesta ("Isaac Newton",true);
 	Respuesta []a30={r116,r117,r118,r119};
-
-
 	
 }
+
