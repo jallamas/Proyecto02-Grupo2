@@ -4,7 +4,8 @@ import model.Respuesta;
 
 public class datosRespuestas {
 	
-		
+	//RESPUESTAS DE LAS PREGUNTAS, HAY 61 PREGUNTAS 
+	
 	//CREAMOS LAS RESPUESTAS A CADA PREGUNTA PASANDO EL TEXTO Y SI SON VERDADERAS O FALSAS
 	Respuesta r1 = new Respuesta ("1945",true);
 	Respuesta r2 = new Respuesta ("1939",false);
@@ -184,7 +185,202 @@ public class datosRespuestas {
 	Respuesta r117 = new Respuesta ("Galileo Galilei",false);
 	Respuesta r118 = new Respuesta ("Daniel Bernoulli",false);
 	Respuesta r119 = new Respuesta ("Isaac Newton",true);
-	Respuesta []a30={r116,r117,r118,r119};
+	Respuesta []a30={r116,r117,r118,r119};	
 	
+	Respuesta r120 = new Respuesta ("La sedentarización de la vida",false);
+	Respuesta r121 = new Respuesta ("La aparición de los megalitos",true);
+	Respuesta r122 = new Respuesta ("La aparición del fuego",false);
+	Respuesta r123 = new Respuesta ("La aparición de la escritura",false);
+	Respuesta []a31={r120,r121,r122,r123};
+
+	Respuesta r124 = new Respuesta ("Peloponesas",false);
+	Respuesta r125 = new Respuesta ("Púnicas",true);
+	Respuesta r126 = new Respuesta ("Romanas",false);
+	Respuesta r127 = new Respuesta ("Cartaginenses",false);
+	Respuesta []a32={r124,r125,r126,r127};
+	
+	Respuesta r128 = new Respuesta ("Macedonia",false);
+	Respuesta r129 = new Respuesta ("Sicilia",true);
+	Respuesta r130 = new Respuesta ("Córcega",false);
+	Respuesta r131 = new Respuesta ("Cerdeña",false);
+	Respuesta []a33={r128,r129,r130,r131};
+	
+	Respuesta r132 = new Respuesta ("Van Gogh",false);
+	Respuesta r133 = new Respuesta ("Pablo Picasso",false);
+	Respuesta r134 = new Respuesta ("Diego Velázquez",true);
+	Respuesta r135 = new Respuesta ("Miguel Ángel",false);
+	Respuesta []a34={r132,r133,r134,r135};
+	
+	Respuesta r136 = new Respuesta ("Transporte de mercancias",true);
+	Respuesta r137 = new Respuesta ("Ocio",false);
+	Respuesta r138 = new Respuesta ("Unidades militares",false);
+	Respuesta r139 = new Respuesta ("Extracción del carbón en las minas",false);
+	Respuesta []a35={r136,r137,r138,r139};
+	
+	Respuesta r140 = new Respuesta ("Fusión",true);
+	Respuesta r141 = new Respuesta ("Solidificación",false);
+	Respuesta r142 = new Respuesta ("Sublimación",false);
+	Respuesta r143 = new Respuesta ("Condensación",false);
+	Respuesta []a36={r140,r141,r142,r143};
+	
+	Respuesta r144 = new Respuesta ("Batalla del Ebro",false);
+	Respuesta r145 = new Respuesta ("Batalla de Lepanto",false);
+	Respuesta r146 = new Respuesta ("Batalla de Waterloo",false);
+	Respuesta r147 = new Respuesta ("Batalla de Trafalgar",true);
+	Respuesta []a37={r144,r145,r146,r147};
+	
+	Respuesta r148 = new Respuesta ("Condensación",true);
+	Respuesta r149 = new Respuesta ("Fusión",false);
+	Respuesta r150 = new Respuesta ("Sublimación",false);
+	Respuesta r151 = new Respuesta ("Solidificación",false);
+	Respuesta []a38={r148,r149,r150,r151};
+	
+	Respuesta r152 = new Respuesta ("Entre 4 y 5 litros",false);
+	Respuesta r153 = new Respuesta ("Entre 5 y 6 litros",true);
+	Respuesta r154 = new Respuesta ("Entre 1 y 2 litros",false);
+	Respuesta r155 = new Respuesta ("Entre 3 y 4 litros",false);
+	Respuesta []a39={r152,r153,r154,r155};
+
+	Respuesta r156 = new Respuesta ("Neoclásico",false);
+	Respuesta r157 = new Respuesta ("Románico",false);
+	Respuesta r158 = new Respuesta ("Gótico",true);
+	Respuesta []a40={r156,r157,r158};
+	
+	Respuesta r159 = new Respuesta ("Mesopotamia",true);
+	Respuesta r160 = new Respuesta ("Egipcia",false);
+	Respuesta r161 = new Respuesta ("Griega",false);
+	Respuesta r162= new Respuesta ("Romana",false);
+	Respuesta []a41={r159,r160,r161,r162};
+	
+	Respuesta r163 = new Respuesta ("1990",false);
+	Respuesta r164 = new Respuesta ("1998",false);
+	Respuesta r165 = new Respuesta ("1989",true);
+	Respuesta r166 = new Respuesta ("1980",false);
+	Respuesta []a42={r163,r164,r165,r166};
+	
+	Respuesta r167 = new Respuesta ("Marie Curie",false);
+	Respuesta r168 = new Respuesta ("Pascal",false);
+	Respuesta r169 = new Respuesta ("Pasteur",false);
+	Respuesta r170 = new Respuesta ("Flemming",true);
+	Respuesta []a43={r167,r168,r169,r170};
+	
+	Respuesta r171 = new Respuesta ("Elípticas",true);
+	Respuesta r172 = new Respuesta ("Uniformes",false);
+	Respuesta r173 = new Respuesta ("Concéntricas",false);
+	Respuesta r174 = new Respuesta ("Circulares",false);
+	Respuesta []a44={r171,r172,r173,r174};
+	
+	Respuesta r175 = new Respuesta ("Lugo",false);
+	Respuesta r176 = new Respuesta ("Ourense",false);
+	Respuesta r177 = new Respuesta ("Santiago de Compostela",true);
+	Respuesta r178 = new Respuesta ("La Coruña",false);
+	Respuesta []a45={r175,r176,r177,r178};
+	
+	Respuesta r179 = new Respuesta ("La molécula",false);
+	Respuesta r180 = new Respuesta ("La célula",true);
+	Respuesta r181 = new Respuesta ("El mol",false);
+	Respuesta r182 = new Respuesta ("El átomo",false);
+	Respuesta []a46={r179,r180,r181,r182};
+	
+	Respuesta r183 = new Respuesta ("Manila",false);
+	Respuesta r184 = new Respuesta ("Tokio",false);
+	Respuesta r185 = new Respuesta ("Seúl",true);
+	Respuesta r186 = new Respuesta ("Hong Kong",false);
+	Respuesta []a47={r183,r184,r185,r186};
+	
+	Respuesta r187 = new Respuesta ("21 de julio",false);
+	Respuesta r188 = new Respuesta ("21 de agosto",false);
+	Respuesta r189 = new Respuesta ("21 de septiembre",true);
+	Respuesta r190 = new Respuesta ("21 de octubre",false);
+	Respuesta []a48={r187,r188,r189,r190};
+	
+	Respuesta r191 = new Respuesta ("Danubio",true);
+	Respuesta r192 = new Respuesta ("Sena",false);
+	Respuesta r193 = new Respuesta ("Volga",false);
+	Respuesta r194 = new Respuesta ("Rhin",false);
+	Respuesta []a49={r191,r192,r193,r194};
+	
+	Respuesta r195 = new Respuesta ("Ósmosis",false);
+	Respuesta r196 = new Respuesta ("Escisión",true);
+	Respuesta r197 = new Respuesta ("Mediante huevos",false);
+	Respuesta r198 = new Respuesta ("Meiosis",false);
+	Respuesta []a50={r195,r196,r197,r198};
+	
+	Respuesta r199 = new Respuesta ("Plomo",true);
+	Respuesta r200 = new Respuesta ("Praseodimio",false);
+	Respuesta r201 = new Respuesta ("Polonio ",false);
+	Respuesta r202 = new Respuesta ("Platino",false);
+	Respuesta []a51={r199,r200,r201,r202};
+	
+	Respuesta r203 = new Respuesta ("El color",false);
+	Respuesta r204 = new Respuesta ("La temperatura",false);
+	Respuesta r205 = new Respuesta ("El peso atómico",true);
+	Respuesta r206 = new Respuesta ("El tamaño",false);
+	Respuesta []a52={r203,r204,r205,r206};
+	
+	Respuesta r207 = new Respuesta ("Una planta",false);
+	Respuesta r208 = new Respuesta ("Un árbol",true);
+	Respuesta r209 = new Respuesta ("Una flor",false);
+	Respuesta r210 = new Respuesta ("Un arbusto",false);
+	Respuesta []a53={r207,r208,r209,r210};
+	
+	Respuesta r211 = new Respuesta ("Epidermis",true);
+	Respuesta r212 = new Respuesta ("Músculo",false);
+	Respuesta r213 = new Respuesta ("Hueso",false);
+	Respuesta r214 = new Respuesta ("Piel",false);
+	Respuesta []a54={r211,r212,r213,r214};
+	
+	Respuesta r215 = new Respuesta ("Consonante y rimante",false);
+	Respuesta r216 = new Respuesta ("Consonante y asonante",true);
+	Respuesta r217 = new Respuesta ("Consonante y necrótica",false);
+	Respuesta r218 = new Respuesta ("Consonante y disonante",false);
+	Respuesta []a55={r215,r216,r217,r218};
+	
+	Respuesta r219 = new Respuesta ("2002",true);
+	Respuesta r220 = new Respuesta ("2000",false);
+	Respuesta r221 = new Respuesta ("2003",false);
+	Respuesta r222 = new Respuesta ("2001",false);
+	Respuesta []a56={r219,r220,r221,r222};
+	
+	Respuesta r223 = new Respuesta ("30",false);
+	Respuesta r224 = new Respuesta ("8",false);
+	Respuesta r225 = new Respuesta ("12",false);
+	Respuesta r226 = new Respuesta ("20",true);
+	Respuesta []a57={r223,r224,r225,r226};
+
+
+	Respuesta r227 = new Respuesta ("BABA",false);
+	Respuesta r228 = new Respuesta ("ABBA",true);
+	Respuesta r229 = new Respuesta ("ABAB",false);
+	Respuesta r230 = new Respuesta ("AABB",false);
+	Respuesta []a58={r227,r228,r229,r230};
+	
+	Respuesta r231 = new Respuesta ("Entre 5 y 6 metros",false);
+	Respuesta r232 = new Respuesta ("Entre 4 y 5 metros",false);
+	Respuesta r233 = new Respuesta ("Entre 6 y 7 metros",true);
+	Respuesta r234 = new Respuesta ("Entre 8 y 9 metros",false);
+	Respuesta []a59={r231,r232,r233,r234};
+	
+	Respuesta r235 = new Respuesta ("Nivómetro",false);
+	Respuesta r236 = new Respuesta ("Tensiómetro",false);
+	Respuesta r237 = new Respuesta ("Barómetro",false);
+	Respuesta r238 = new Respuesta ("Amperímetro",true);
+	Respuesta []a60={r235,r236,r237,r238};
+	
+	Respuesta r239 = new Respuesta ("Angular al movimiento del cuerpo",false);
+	Respuesta r240 = new Respuesta ("Contrario al movimiento del cuerpo",true);
+	Respuesta r241 = new Respuesta ("Perpendicular al movimiento del cuerpo",false);
+	Respuesta r242 = new Respuesta ("Misma dirección que el movimiento del cuerpo",false);
+	Respuesta []a61={r239,r240,r241,r242};
+	
+	
+	
+	//RESPUESTAS DE LOS RETOS
+	
+	Respuesta r243 = new Respuesta ("Clave compacta",true);
+	Respuesta r244 = new Respuesta ("Clave externa",false);
+	Respuesta r245 = new Respuesta ("Clave alternativa",false);
+	Respuesta r246 = new Respuesta ("Clave candidata",false);
+	Respuesta []a62={r243,r244,r245,r246};
 }
 
