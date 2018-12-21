@@ -1,37 +1,33 @@
 package controller;
 
+import java.util.Random;
+import vista.ImprimirJugadores;
 import model.Jugador;
-import utilidades.Probabilidad;
 
 public class controllerPartida {
 
-	public void generarEvento() {
-		float probabilidad = 0.70F;
-		int numeroProbable = 3;
-		int opciones = 3;
-		int res = Probabilidad.generarProbabilidad(opciones, numeroProbable, probabilidad);
-
-		if (res == 1) {
-
+	public void generarEvento(Jugador j1, int probmascomodin, int probrobarcomodin) {
+		Random r = new Random();
+		int aleatorio = r.nextInt(100 - 1) + 1;
+		if (aleatorio <= probmascomodin) {
 			// darComodin();
 		}
-
-		else if (res == 2) {
-
-			// Robar comodin
+		else if(aleatorio>probmascomodin && aleatorio <=probrobarcomodin) {
+			//RobarComodin();
 		}
 
 	}
-	// public void darComodin(Jugador j1) {
-	//
-	// int comodines = j1.getComodinesactuales();
-	// comodines = comodines++;
-	//
-	// }
 
-	public void quitarComodin(Jugador l1[], int opcion) {
-		for (int i = 0; i < l1.length; i++) {
-			System.out.println(i++ + "-" + l1[i].getNombre());
-		}
+	public static void darComodin(Jugador j1) {
+
+		int comodines = j1.getComodines();
+		comodines = comodines++;
+	}
+	public static void robarComodin(Jugador j1[], int opcion) {
+		ImprimirJugadores.ImprimirJugador(j1);
+		 int res = j1[opcion-1].getComodines();
+		 res = res--;
+		 
+		
 	}
 }
