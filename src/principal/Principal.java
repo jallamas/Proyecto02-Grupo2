@@ -4,7 +4,8 @@ import model.Jugador;
 import utilidades.Leer;
 import vista.ImprimirIntroduccion;
 import vista.ImprimirIntrucciones;
-
+import crud.Crudpartida;
+import datos.datosPreguntas;
 
 public class Principal {
 
@@ -13,8 +14,8 @@ public class Principal {
 		int puntuacion = 0; // Puntos con los que comienza un jugador
 		int comodines = 1; // Número de comodines con los que comienza la partida un jugador
 		boolean eleccion = true; // True si ha elegido pregunta común y False si ha elegido Reto o pregunta específica.
-		double probComodin = 0.1; // Porcentaje de probabilidad de que te "toque" un comodín al responder correctamente una pregunta
-		double probRobarComodin = 0.1; // Porcentaje de probabilidad de que se te permita "robar" un comodín a un
+		double probComodin = 10; // Porcentaje de probabilidad de que te "toque" un comodín al responder correctamente una pregunta
+		double probRobarComodin = 10; // Porcentaje de probabilidad de que se te permita "robar" un comodín a un
 										// compañero al responder correctamente una pregunta
 		
 		// Variables para crear la partida
@@ -23,6 +24,7 @@ public class Principal {
 		int puntVictoria=0; //Puntos necesarios para ganar.
 		Jugador []listaJug;
 		String nombreJug;
+		datosPreguntas dp0=new datosPreguntas();
 		
 		//Pantallas iniciales
 		
@@ -53,10 +55,8 @@ public class Principal {
 			System.out.println(listaJug[i]);
 		}
 	
-	
+		Crudpartida.crearPartida(numjugadores,puntVictoria,probComodin,probRobarComodin,listaJug,dp0.obtenerPreguntas() ,dp0.obtenerRetos());
 	
 	
 	}
-
-	
 }

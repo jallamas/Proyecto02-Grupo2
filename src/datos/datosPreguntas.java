@@ -90,5 +90,12 @@ public class datosPreguntas {
 	//TIPO 1 INDICA QUE SON ACTVIDADES TIPO RETOS
 	Actividades [] tipo1 = {e62};
 
+	public Actividades[] obtenerPreguntas() {
+		return tipo0;
+	}
+	
+	public Actividades[] obtenerRetos() {
+		return tipo1;
+	}
 
 }

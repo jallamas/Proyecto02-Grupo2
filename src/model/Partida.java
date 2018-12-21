@@ -8,16 +8,19 @@ public class Partida {
 	private double probabilidadComodin,probabilidadRobarComodin;
 	private Jugador []jugadores;
 	private Actividades []preguntas;
+	private Actividades []retos;
 	
 	
 	public Partida(int numjugadores, int puntosVictoria, int numMaxRondas, double probabilidadComodin,
-			double probabilidadRobarComodin, Jugador[] jugadores, Actividades []preguntas) {
+			double probabilidadRobarComodin, Jugador[] jugadores, Actividades []preguntas, Actividades []retos) {
 		this.numjugadores = numjugadores;
 		this.puntosVictoria = puntosVictoria;
 		this.numMaxRondas = numMaxRondas;
 		this.probabilidadComodin = probabilidadComodin;
 		this.probabilidadRobarComodin = probabilidadRobarComodin;
 		this.jugadores = jugadores;
+		this.preguntas = preguntas;
+		this.retos = retos;
 	}
 
 
@@ -90,6 +93,14 @@ public class Partida {
 		this.preguntas = preguntas;
 	}
 
+	public Actividades[] getRetos() {
+		return retos;
+	}
+
+
+	public void setRetos(Actividades[] retos) {
+		this.retos = retos;
+	}
 
 	@Override
 	public String toString() {

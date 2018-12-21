@@ -1,12 +1,13 @@
 package crud;
 
+import model.Actividades;
 import model.Jugador;
 import model.Partida;
 
 public class Crudpartida {
 
-	public Partida crearPartida(int numJug, int ptosVict, double probabilidadComodin, double probabilidadRobarComodin,
-			Jugador[] jugadores) {
+	public static Partida crearPartida(int numJug, int ptosVict, double probabilidadComodin, double probabilidadRobarComodin,
+			Jugador[] jugadores,Actividades[]listaPreguntas,Actividades[]listaRetos) {
 		int maxRondas = 0;
 		if (ptosVict <= 20) {
 			maxRondas = ptosVict + 2;
@@ -14,7 +15,7 @@ public class Crudpartida {
 			maxRondas = ptosVict + (ptosVict * 20 / 100);
 		}
 		Partida p = new Partida(numJug, ptosVict, maxRondas, probabilidadComodin, probabilidadRobarComodin, jugadores,
-				null);
+				listaPreguntas,listaRetos);
 		return p;
 	}
 
