@@ -376,11 +376,109 @@ public class datosRespuestas {
 	
 	
 	//RESPUESTAS DE LOS RETOS
-	
+
 	Respuesta r243 = new Respuesta ("Clave compacta",true);
 	Respuesta r244 = new Respuesta ("Clave externa",false);
 	Respuesta r245 = new Respuesta ("Clave alternativa",false);
 	Respuesta r246 = new Respuesta ("Clave candidata",false);
 	Respuesta []a62={r243,r244,r245,r246};
+	
+	
+	Respuesta r247 = new Respuesta ("Atributo=Fila, Tupla=Columna",false);
+	Respuesta r248 = new Respuesta ("Atributo=Diagonal derecha, Tupla=Diagonal izquierda",false);
+	Respuesta r249 = new Respuesta ("Atributo=Columna, Tupla=Fila",true);
+	Respuesta r250 = new Respuesta ("Atributo=Diagonal izquierda, Tupla=Diagonal derecha",false);
+	Respuesta []a63={r247,r248,r249,r250};
+	
+	Respuesta r251 = new Respuesta ("Independencia lógica",false);
+	Respuesta r252 = new Respuesta ("Flexibilidad",false);
+	Respuesta r253 = new Respuesta ("Independencia física",false);
+	Respuesta r254 = new Respuesta ("Heterogeneidad",true);
+	Respuesta []a64={r251,r252,r253,r254};
+	
+	Respuesta r255 = new Respuesta ("No obligatoriedad",false);
+	Respuesta r256 = new Respuesta ("Restricción de multiplicidad",false);
+	Respuesta r257 = new Respuesta ("Restricción de clave principal(primary key)",true);
+	Respuesta r258 = new Respuesta ("Clave necesaria",false);
+	Respuesta []a65={r255,r256,r257,r258};
+	
+	Respuesta r259 = new Respuesta ("La restricción de corrección",false);
+	Respuesta r260 = new Respuesta ("La restricción de invocación",false);
+	Respuesta r261 = new Respuesta ("La restricción de unilateralidad",false);
+	Respuesta r262 = new Respuesta ("La restricción de unicidad",true);
+	Respuesta []a66={r259,r260,r261,r262};
+	
+	Respuesta r263 = new Respuesta ("Ninguna de las demás respuestas es correcta",true);
+	Respuesta r264 = new Respuesta ("Dependen del lenguaje de programación",false);
+	Respuesta r265 = new Respuesta ("Que los disparadores prohíben que el atributo marcado de esta forma quede vacío y los triggers no",false);
+	Respuesta r266 = new Respuesta ("Los triggers bloquea todo aquello que no respete la semántica y la otra no",false);
+	Respuesta []a67={r263,r264,r265,r266};
+	
+	Respuesta r267 = new Respuesta ("Clave candidata que se escoge como identificador de la tabla",false);
+	Respuesta r268 = new Respuesta ("Las demás respuestas son correctas",true);
+	Respuesta r269 = new Respuesta ("La mejor clave candidata",false);
+	Respuesta r270 = new Respuesta ("Conjunto de atributos que identifican unívocamente cada tupla de la relación",false);
+	Respuesta []a68={r267,r268,r269,r270};
+	
+	Respuesta r271 = new Respuesta ("Restricción de unicidad",false);
+	Respuesta r272 = new Respuesta ("Restricción de clave alternativa",false);
+	Respuesta r273 = new Respuesta ("Restricción en cascada",true);
+	Respuesta r274 = new Respuesta ("Restricción de obligatoriedad",false);
+	Respuesta []a69={r271,r272,r273,r274};
+	
+	Respuesta r275 = new Respuesta ("Primarias o secundarias",false);
+	Respuesta r276 = new Respuesta ("Persistentes o temporales",true);
+	Respuesta r277 = new Respuesta ("Ninguna es correcta",false);
+	Respuesta r278 = new Respuesta ("Normales o reflexivas",false);
+	Respuesta []a70={r275,r276,r277,r278};
+	
+	Respuesta r279 = new Respuesta ("Es la parte final del código donde todo el mundo da lo mejor de sí para terminar lo más rápido posible",true);
+	Respuesta r280 = new Respuesta ("Tiene una duración fija",false);
+	Respuesta r281 = new Respuesta ("En el sprint se le asigna una tarea a cada uno para así tener claro qué es lo que tiene que hacer",false);
+	Respuesta r282 = new Respuesta ("Todas las demás respuestas son correctas",false);
+	Respuesta []a71={r279,r280,r281,r282};
+	
+	Respuesta r283 = new Respuesta ("Programa completo que puede ser ejecutado por el ordenador",false);
+	Respuesta r284 = new Respuesta ("Código máquina generado tras compilar determinado código fuente",true);
+	Respuesta r285 = new Respuesta ("Código escrito por un programador en un determinado lenguaje de programación",false);
+	Respuesta r286 = new Respuesta ("Código generado en la fase de análisis",false);
+	Respuesta []a72={r283,r284,r285,r286};
+	
+	Respuesta r287 = new Respuesta ("Física y digital",false);
+	Respuesta r288 = new Respuesta ("De uso y de aplicación",false);
+	Respuesta r289 = new Respuesta ("Orientada a futuros desarrollos o modificaciones de mantenimiento y uso y aplicación",true);
+	Respuesta r290 = new Respuesta ("Física y de uso y aplicación",false);
+	Respuesta []a73={r287,r288,r289,r290};
+	
+	Respuesta r291 = new Respuesta ("Desarrollo iterativo e incremental",true);
+	Respuesta r292 = new Respuesta ("Ninguna es correcta",false);
+	Respuesta r293 = new Respuesta ("Desarrollo incremental",false);
+	Respuesta r294 = new Respuesta ("Desarrollo iterativo",false);
+	Respuesta []a74={r291,r292,r293,r294};
+	
+	Respuesta r295 = new Respuesta ("No se maneja bien la memoria",true);
+	Respuesta r296 = new Respuesta ("El difícil aprendizaje de este lenguaje",false);
+	Respuesta r297 = new Respuesta ("Su lenguaje difícil y poco intuitivo",false);
+	Respuesta r298 = new Respuesta ("Es antiguo",false);
+	Respuesta []a75={r295,r296,r297,r298};
+	
+	Respuesta r299 = new Respuesta ("Subir los cambios al repositorio en Github(o similar)",false);
+	Respuesta r300 = new Respuesta ("Descargar el repositorio de Github(o similar)",true);
+	Respuesta r301 = new Respuesta ("Actualizar el directorio en tu ordenador",false);
+	Respuesta r302 = new Respuesta ("Borrar tu repositorio en Github(o similar)",false);
+	Respuesta []a76={r299,r300,r301,r302};
+	
+	Respuesta r303 = new Respuesta ("git log “comentario”",false);
+	Respuesta r304 = new Respuesta ("git add . -comment “mensaje”",false);
+	Respuesta r305 = new Respuesta ("git commit",false);
+	Respuesta r306 = new Respuesta ("git commit -m “mensaje”",true);
+	Respuesta []a77={r303,r304,r305,r306};
+	
+	Respuesta r307 = new Respuesta ("git add . log",true);
+	Respuesta r308 = new Respuesta ("git status",false);
+	Respuesta r309 = new Respuesta ("git state",false);
+	Respuesta r310 = new Respuesta ("git log",false);
+	Respuesta []a78={r307,r308,r309,r310};
+	
 }
 

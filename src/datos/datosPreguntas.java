@@ -11,7 +11,8 @@ public class datosPreguntas {
 	
 	private Respuesta[] a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,
 	a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50
-	,a51,a52,a53,a54,a55,a56,a57,a58,a59,a60,a61,a62;
+	,a51,a52,a53,a54,a55,a56,a57,a58,a59,a60,a61,a62, a63,a64,a65,a66,a67,a68,a69,a70,a71,a72,a73,a74,a75,a76,a77,a78,a79,a80
+	,a81,a82,a83,a84,a85,a86,a87,a88,a89,a90,a91,a92,a93,a94,a95,a96,a97,a98,a99,a100,a101;
 	
 	
 	 //ENUNCIADOS DE LAS PREGUNTAS
@@ -78,17 +79,67 @@ public class datosPreguntas {
 	Actividades e60 = new Actividades("La intensidad de corriente eléctrica se mide utilizando:", 0, a60);
 	Actividades e61 = new Actividades("¿Qué sentido tiene siempre la fuerza de rozamiento?", 0, a61);
 	
+	
 	//ENUNCIADOS DE LOS RETOS
 	Actividades e62 = new Actividades("¿Cúal de las siguientes claves no existe?(Base de Datos)", 1, a62);
+	
+	Actividades e63 = new Actividades("¿Cuál no es una restricción de actualización y eliminación?(Base de Datos)", 0, a63);
+	Actividades e64 = new Actividades("Selecciona los sinónimos correctos:(Base de Datos)", 0, a64);
+	Actividades e65 = new Actividades("¿Cuál de estos objetivos no es del modelo Realacional?(Base de datos)", 0, a65);
+	Actividades e66 = new Actividades("Selecciona cual de estas opciones es una restricción semántica del modelo relacional:(Base de Datos)", 0, a66);
+	Actividades e67 = new Actividades("Una restricción semántica es:(Base de Datos)", 0, a67);
+	Actividades e68 = new Actividades("¿Qué diferencia hay entre disparadores y triggers?(Base de Datos)", 0, a68);
+	Actividades e69 = new Actividades("¿Qué es una clave primaria?(Base de Datos)", 0, a69);
+	Actividades e70 = new Actividades("¿Cuál de las siguientes NO es un tipo de restricción semántica?(Base de Datos)", 0, a70);
+	
+	Actividades e71 = new Actividades("Las tablas pueden ser según su tipo:(Base de Datos)", 0, a71);
+	Actividades e72 = new Actividades("¿Qué característica no es verdadera en un sprint?(Entornos de Desarrollo)", 0, a72);
+	Actividades e73 = new Actividades("¿Qué es un código objeto?(Entornos de desarrollo)", 0, a73);
+	Actividades e74 = new Actividades("¿Cuáles son los dos tipos de documentación que hay?(Entornos de Desarrollo)", 0, a74);
+	Actividades e75 = new Actividades("Las metodologías ágiles se basan en:(Entornos de desarrollo)", 0, a75);
+	Actividades e76 = new Actividades("¿Cuál es la mayor fuente de errores de C++?(Entornos de desarrollo)", 0, a76);
+	Actividades e77 = new Actividades("¿Para qué sirve git pull?(Entornos de desarrollo)", 0, a77);
+	Actividades e78 = new Actividades("¿Cómo añadimos un comentario además de confirmar los cambios?(Entornos de desarrollo)", 0, a78);
+	Actividades e79 = new Actividades("¿Cuál es el comando para comprobar el estado del repositorio?(Entornos de desarrollo)", 0, a79);	
+	Actividades e80 = new Actividades("¿Para qué sirve el comando de git remote add origin?(Entornos de desarrollo)", 0, a80);
+	
+	Actividades e81 = new Actividades("¿Qué hace la operación git log?(Entornos de desarrollo)", 0, a81);
+	Actividades e82 = new Actividades("¿Qué hace el operador = en Java?(Programación)", 0, a82);
+	Actividades e83 = new Actividades("¿Qué es el identificador de una variable?(Programación)", 0, a83);
+	Actividades e84 = new Actividades("¿Cuál es la forma correcta de declarar una variable?(Programación)", 0, a84);
+	Actividades e85 = new Actividades(" Un bucle es:(Programación)", 0, a85);
+	Actividades e86 = new Actividades("Una sentencia if…(Programación)", 0, a86);
+	
+	Actividades e87 = new Actividades("Canta en voz alta una parte de algún villancico que conozcas", 0, a87);
+	Actividades e88 = new Actividades("Pronuncia el siguiente trabalenguas: Si al pronunciar te trabas con las palabras, "
+	+ "practica con trabalenguas, porque trabalenguando, trabalenguando, te irás destrabalenduando.", 0, a88);	
+	Actividades e89 = new Actividades("Dibuja en la pizarra al profesor que peor te caiga", 0, a89);
+	Actividades e90 = new Actividades("Da una vuelta a la clase a pata coja", 0, a90);
+	Actividades e91 = new Actividades("Haz una bola de papel y  trata de encestarla a la primera en la papelera desde tu sitio", 0, a91);
+	
+	Actividades e92 = new Actividades("¿Qué etiqueta se usa para poner enlaces?(Lenguaje de marcas)", 0, a92);
+	Actividades e93 = new Actividades("¿Qué etiqueta se usa para crear una lista ordenada?(Lenguaje de marcas)", 0, a93);
+	Actividades e94 = new Actividades("¿Qué etiqueta se usa para crear una lista desordenada?(Lenguaje de marcas)", 0, a94);
+	Actividades e95 = new Actividades("¿Qué etiqueta se usa para hacer un salto de línea simple?(Lenguaje de marcas)", 0, a95);
+	Actividades e96 = new Actividades("¿Qué etiqueta se usa para convertir el texto en negrita?(Lenguaje de marcas)", 0, a96);
+	Actividades e97 = new Actividades("¿Qué etiqueta se usa para convertir el texto en cursiva?(Lenguaje de marcas)", 0, a97);
+	Actividades e98 = new Actividades("¿Qué sintaxis se usa para declarar el estilo del tipo de letra de un texto?(Lenguaje de marcas)", 0, a98);
+	Actividades e99 = new Actividades("¿Qué sintaxis se usa para visualizar un texto normal en mayúsculas versales?(Lenguaje de marcas)", 0, a99);
+	
+	Actividades e100 = new Actividades("La intensidad de corriente eléctrica se mide utilizando:", 0, a100);
+	Actividades e101 = new Actividades("¿Qué sentido tiene siempre la fuerza de rozamiento?", 0, a101);
 
 	
 	
 	
 	//TIPO 0 INDICA QUE SON ACTVIDADES TIPO PREGUNTAS
-	Actividades [] tipo0 = {e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,e23,e24,e25,e26,e27,e28,e29,e30};
+	Actividades [] tipo0 = {e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,e23,e24,e25,e26,e27,e28,e29,e30,
+			e31,e32,e33,e34,e35,e36,e37,e38,e39,e40,e41,e42,e43,e44,e45,e46,e47,e48,e49,e50,e51,e52,e53,e54,e55,e56,e57,e58,e59,e50,
+			e51,e52,e53,e54,e55,e56,e57,e58,e59,e60,e61};
 	
 	//TIPO 1 INDICA QUE SON ACTVIDADES TIPO RETOS
-	Actividades [] tipo1 = {e62};
+	Actividades [] tipo1 = {e62,e63,e64,e65,e66,e67,e68,e69,e70,e71,e72,e73,e74,e75,e76,e77,e78,e79,e80,e81,e82,e83,e84,e85,e86,e87,e88,e89,e90,
+			e91,e92,e93,e94,e95,e96,e97,e98,e99,e100,e101};
 
 	public Actividades[] obtenerPreguntas() {
 		return tipo0;
