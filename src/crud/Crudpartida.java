@@ -3,10 +3,16 @@ package crud;
 import model.Actividades;
 import model.Jugador;
 import model.Partida;
+import java.util.Random;
+
 
 public class Crudpartida {
-
-	public static Partida crearPartida(int numJug, int ptosVict, double probabilidadComodin, double probabilidadRobarComodin,
+		
+	public Crudpartida() {
+		
+	}
+	
+	public Partida crearPartida(int numJug, int ptosVict, double probabilidadComodin, double probabilidadRobarComodin,
 			Jugador[] jugadores,Actividades[]listaPreguntas,Actividades[]listaRetos) {
 		int maxRondas = 0;
 		if (ptosVict <= 20) {
@@ -18,5 +24,13 @@ public class Crudpartida {
 				listaPreguntas,listaRetos);
 		return p;
 	}
-
+	
+	//Elegimos quién empieza a jugar
+	
+	public Jugador elegirTurno(Partida p) {
+		Random r=new Random();
+		System.out.println(p.getNumjugadores());
+		int ale=r.nextInt(p.getNumjugadores());
+		return p.getJugadores()[ale];
+	}
 }

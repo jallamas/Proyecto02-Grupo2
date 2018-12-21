@@ -5,14 +5,15 @@ public class Jugador {
 	private String nombre;
 	private int puntuacion;
 	private int comodines;
-	private boolean eleccion;//True si ha elegido pregunta y false si es reto
+	private boolean eleccion;// True si ha elegido pregunta y false si es reto
 
+	public Jugador() {
+	}
 
-
-	public Jugador(String nombre, int puntuacion,int comodines, boolean eleccion) {
+	public Jugador(String nombre, int puntuacion, int comodines, boolean eleccion) {
 		this.nombre = nombre;
 		this.puntuacion = puntuacion;
-		this.comodines=comodines;
+		this.comodines = comodines;
 		this.eleccion = eleccion;
 	}
 
@@ -53,6 +54,5 @@ public class Jugador {
 		return "Jugador [nombre=" + nombre + ", puntuacion=" + puntuacion + ", comodines=" + comodines + ", eleccion="
 				+ eleccion + "]";
 	}
-	
-	
+
 }

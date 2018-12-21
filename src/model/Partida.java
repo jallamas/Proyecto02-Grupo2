@@ -22,6 +22,9 @@ public class Partida {
 		this.preguntas = preguntas;
 		this.retos = retos;
 	}
+	
+	public Partida() {
+	}
 
 
 	public int getNumjugadores() {
