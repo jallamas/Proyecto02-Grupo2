@@ -27,7 +27,12 @@ public class controllerPartida {
 		ImprimirJugadores.ImprimirJugador(j1);
 		 int res = j1[opcion-1].getComodines();
 		 res = res--;
-		 
-		
+		 	
+	}
+	
+	public void limpiarPantalla() {
+		for (int i = 0; i < 15; i++) {
+			System.out.println(" ");
+		}
 	}
 }

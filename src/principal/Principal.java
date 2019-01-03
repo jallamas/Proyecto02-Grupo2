@@ -7,6 +7,8 @@ import vista.ImprimirIntrucciones;
 import crud.Crudpartida;
 import datos.datosPreguntas;
 import model.Partida;
+import crud.CrudJugador;
+import controller.controllerPartida;
 
 public class Principal {
 
@@ -31,19 +33,19 @@ public class Principal {
 		Crudpartida cp= new Crudpartida();
 		Partida p;
 		Jugador j1=new Jugador();
+		CrudJugador cj=new CrudJugador();
+		controllerPartida conp=new controllerPartida();
 		
 		// Pantallas iniciales
 
 		ImprimirIntroduccion.imprimirIntroduccion();
-		for (int i = 0; i < 15; i++) {
-			System.out.println(" ");
-		}
+		conp.limpiarPantalla();
 		ImprimirIntrucciones.imprimirInstrucciones();
 		ImprimirIntrucciones.imprimirGuia();
 
 		// Pedimos los datos para crear la partida
 
-		System.out.println("Indique el número de jugadores (1-4)");
+		System.out.println("\nIndique el número de jugadores (1-4)");
 		numjugadores = Leer.datoInt();
 		listaJug = new Jugador[numjugadores];
 
@@ -56,15 +58,18 @@ public class Principal {
 			Jugador j = new Jugador(nombreJug, puntuacion, comodines, eleccion);
 			listaJug[i] = j;
 		}
-
-		for (int i = 0; i < numjugadores; i++) {
-			System.out.println(listaJug[i]);
-		}
 		p=cp.crearPartida(numjugadores, puntVictoria, probComodin, probRobarComodin, listaJug, dp0.obtenerPreguntas(), dp0.obtenerRetos());
 				
 		// Elegimos quién comienza
-		System.out.println("Vamos a elegir quién comienza.");
-		System.out.printf("%s, ¡te ha tocado empezar!",cp.elegirTurno(p));
 		
+		conp.limpiarPantalla();
+		System.out.println("Vamos a elegir quién comienza.");
+		System.out.printf("%s, ¡te ha tocado empezar!\n\n",cp.elegirTurno(p).getNombre());
+		
+		//Primera ronda
+		
+		for (int i = 0; i < numjugadores; i++) {
+			System.out.println(listaJug[i]);
+		}
 	}
 }
