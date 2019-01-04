@@ -383,102 +383,363 @@ public class datosRespuestas {
 	Respuesta r246 = new Respuesta ("Clave candidata",false);
 	Respuesta []a62={r243,r244,r245,r246};
 	
+	// RESPUESTAS A LA PREGUNTA 63, DEBIDO A UN ERROR HE TENIDO QUE LLAMARLAS POR RESPUESTAS 1000 HASTA 1003.
+	Respuesta r1000 = new Respuesta ("Prohibir la operación",false);
+	Respuesta r1001 = new Respuesta ("Colocar nulos",false);
+	Respuesta r1002 = new Respuesta ("Transmitir la operación en cascada",false);
+	Respuesta r1003 = new Respuesta ("No usar el valor en defecto",true);
+	Respuesta []a63={r1000,r1001,r1002,r1003};
 	
 	Respuesta r247 = new Respuesta ("Atributo=Fila, Tupla=Columna",false);
 	Respuesta r248 = new Respuesta ("Atributo=Diagonal derecha, Tupla=Diagonal izquierda",false);
 	Respuesta r249 = new Respuesta ("Atributo=Columna, Tupla=Fila",true);
 	Respuesta r250 = new Respuesta ("Atributo=Diagonal izquierda, Tupla=Diagonal derecha",false);
-	Respuesta []a63={r247,r248,r249,r250};
+	Respuesta []a64={r247,r248,r249,r250};
 	
 	Respuesta r251 = new Respuesta ("Independencia lógica",false);
 	Respuesta r252 = new Respuesta ("Flexibilidad",false);
 	Respuesta r253 = new Respuesta ("Independencia física",false);
 	Respuesta r254 = new Respuesta ("Heterogeneidad",true);
-	Respuesta []a64={r251,r252,r253,r254};
+	Respuesta []a65={r251,r252,r253,r254};
 	
 	Respuesta r255 = new Respuesta ("No obligatoriedad",false);
 	Respuesta r256 = new Respuesta ("Restricción de multiplicidad",false);
 	Respuesta r257 = new Respuesta ("Restricción de clave principal(primary key)",true);
 	Respuesta r258 = new Respuesta ("Clave necesaria",false);
-	Respuesta []a65={r255,r256,r257,r258};
+	Respuesta []a66={r255,r256,r257,r258};
 	
 	Respuesta r259 = new Respuesta ("La restricción de corrección",false);
 	Respuesta r260 = new Respuesta ("La restricción de invocación",false);
 	Respuesta r261 = new Respuesta ("La restricción de unilateralidad",false);
 	Respuesta r262 = new Respuesta ("La restricción de unicidad",true);
-	Respuesta []a66={r259,r260,r261,r262};
+	Respuesta []a67={r259,r260,r261,r262};
 	
 	Respuesta r263 = new Respuesta ("Ninguna de las demás respuestas es correcta",true);
 	Respuesta r264 = new Respuesta ("Dependen del lenguaje de programación",false);
 	Respuesta r265 = new Respuesta ("Que los disparadores prohíben que el atributo marcado de esta forma quede vacío y los triggers no",false);
 	Respuesta r266 = new Respuesta ("Los triggers bloquea todo aquello que no respete la semántica y la otra no",false);
-	Respuesta []a67={r263,r264,r265,r266};
+	Respuesta []a68={r263,r264,r265,r266};
 	
 	Respuesta r267 = new Respuesta ("Clave candidata que se escoge como identificador de la tabla",false);
 	Respuesta r268 = new Respuesta ("Las demás respuestas son correctas",true);
 	Respuesta r269 = new Respuesta ("La mejor clave candidata",false);
 	Respuesta r270 = new Respuesta ("Conjunto de atributos que identifican unívocamente cada tupla de la relación",false);
-	Respuesta []a68={r267,r268,r269,r270};
+	Respuesta []a69={r267,r268,r269,r270};
 	
 	Respuesta r271 = new Respuesta ("Restricción de unicidad",false);
 	Respuesta r272 = new Respuesta ("Restricción de clave alternativa",false);
 	Respuesta r273 = new Respuesta ("Restricción en cascada",true);
 	Respuesta r274 = new Respuesta ("Restricción de obligatoriedad",false);
-	Respuesta []a69={r271,r272,r273,r274};
+	Respuesta []a70={r271,r272,r273,r274};
 	
 	Respuesta r275 = new Respuesta ("Primarias o secundarias",false);
 	Respuesta r276 = new Respuesta ("Persistentes o temporales",true);
 	Respuesta r277 = new Respuesta ("Ninguna es correcta",false);
 	Respuesta r278 = new Respuesta ("Normales o reflexivas",false);
-	Respuesta []a70={r275,r276,r277,r278};
+	Respuesta []a71={r275,r276,r277,r278};
 	
 	Respuesta r279 = new Respuesta ("Es la parte final del código donde todo el mundo da lo mejor de sí para terminar lo más rápido posible",true);
 	Respuesta r280 = new Respuesta ("Tiene una duración fija",false);
 	Respuesta r281 = new Respuesta ("En el sprint se le asigna una tarea a cada uno para así tener claro qué es lo que tiene que hacer",false);
 	Respuesta r282 = new Respuesta ("Todas las demás respuestas son correctas",false);
-	Respuesta []a71={r279,r280,r281,r282};
+	Respuesta []a72={r279,r280,r281,r282};
 	
 	Respuesta r283 = new Respuesta ("Programa completo que puede ser ejecutado por el ordenador",false);
 	Respuesta r284 = new Respuesta ("Código máquina generado tras compilar determinado código fuente",true);
 	Respuesta r285 = new Respuesta ("Código escrito por un programador en un determinado lenguaje de programación",false);
 	Respuesta r286 = new Respuesta ("Código generado en la fase de análisis",false);
-	Respuesta []a72={r283,r284,r285,r286};
+	Respuesta []a73={r283,r284,r285,r286};
 	
 	Respuesta r287 = new Respuesta ("Física y digital",false);
 	Respuesta r288 = new Respuesta ("De uso y de aplicación",false);
 	Respuesta r289 = new Respuesta ("Orientada a futuros desarrollos o modificaciones de mantenimiento y uso y aplicación",true);
 	Respuesta r290 = new Respuesta ("Física y de uso y aplicación",false);
-	Respuesta []a73={r287,r288,r289,r290};
+	Respuesta []a74={r287,r288,r289,r290};
 	
 	Respuesta r291 = new Respuesta ("Desarrollo iterativo e incremental",true);
 	Respuesta r292 = new Respuesta ("Ninguna es correcta",false);
 	Respuesta r293 = new Respuesta ("Desarrollo incremental",false);
 	Respuesta r294 = new Respuesta ("Desarrollo iterativo",false);
-	Respuesta []a74={r291,r292,r293,r294};
+	Respuesta []a75={r291,r292,r293,r294};
 	
 	Respuesta r295 = new Respuesta ("No se maneja bien la memoria",true);
 	Respuesta r296 = new Respuesta ("El difícil aprendizaje de este lenguaje",false);
 	Respuesta r297 = new Respuesta ("Su lenguaje difícil y poco intuitivo",false);
 	Respuesta r298 = new Respuesta ("Es antiguo",false);
-	Respuesta []a75={r295,r296,r297,r298};
+	Respuesta []a76={r295,r296,r297,r298};
 	
 	Respuesta r299 = new Respuesta ("Subir los cambios al repositorio en Github(o similar)",false);
 	Respuesta r300 = new Respuesta ("Descargar el repositorio de Github(o similar)",true);
 	Respuesta r301 = new Respuesta ("Actualizar el directorio en tu ordenador",false);
 	Respuesta r302 = new Respuesta ("Borrar tu repositorio en Github(o similar)",false);
-	Respuesta []a76={r299,r300,r301,r302};
+	Respuesta []a77={r299,r300,r301,r302};
 	
 	Respuesta r303 = new Respuesta ("git log “comentario”",false);
 	Respuesta r304 = new Respuesta ("git add . -comment “mensaje”",false);
 	Respuesta r305 = new Respuesta ("git commit",false);
 	Respuesta r306 = new Respuesta ("git commit -m “mensaje”",true);
-	Respuesta []a77={r303,r304,r305,r306};
+	Respuesta []a78={r303,r304,r305,r306};
 	
-	Respuesta r307 = new Respuesta ("git add . log",true);
-	Respuesta r308 = new Respuesta ("git status",false);
+	Respuesta r307 = new Respuesta ("git add . log",false);
+	Respuesta r308 = new Respuesta ("git status",true);
 	Respuesta r309 = new Respuesta ("git state",false);
 	Respuesta r310 = new Respuesta ("git log",false);
-	Respuesta []a78={r307,r308,r309,r310};
+	Respuesta []a79={r307,r308,r309,r310};
 	
+	Respuesta r311 = new Respuesta ("Cambia el repositorio remoto a uno local",false);
+	Respuesta r312 = new Respuesta ("Conecta un repositorio remoto a uno local",false);
+	Respuesta r313 = new Respuesta ("Conecta un repositorio local a uno remoto",true);
+	Respuesta r314 = new Respuesta ("Cambia el repositorio local a uno remoto",false);
+	Respuesta []a80={r311,r312,r313,r314};
+	
+	Respuesta r315 = new Respuesta ("Nos permite obtener un registro de confirmaciones",true);
+	Respuesta r316 = new Respuesta ("No es un comando de git",false);
+	Respuesta r317 = new Respuesta ("Nos permite obtener un registro de confirmaciones sin el usuario que las ha realizado",false);
+	Respuesta r318 = new Respuesta ("Nos permite obtener ayuda sobre otros comandos",false);
+	Respuesta []a81={r315,r316,r317,r318};
+	
+	Respuesta r319 = new Respuesta ("Asigna el valor del lado derecho del operador a la variable del lado izquierdo",true);
+	Respuesta r320 = new Respuesta ("Compara los valores de ambos lados del operador y dice si son iguales o no",false);
+	Respuesta r321 = new Respuesta ("Reserva un espacio en la memoria del ordenador",false);
+	Respuesta r322 = new Respuesta ("Informa que lo que hay en el lado izquierdo del operador es igual a lo que hay en el lado derecho",false);
+	Respuesta []a82={r319,r320,r321,r322};
+	
+	Respuesta r323 = new Respuesta ("La palabra que identifica el tipo de dato que es",false);
+	Respuesta r324 = new Respuesta ("El nombre que damos al tipo de dato que guardará la variable",false);
+	Respuesta r325 = new Respuesta ("El valor que se guarda en la variable",false);
+	Respuesta r326 = new Respuesta ("El nombre que damos a la variable",true);
+	Respuesta []a83={r323,r324,r325,r326};
+
+	Respuesta r327 = new Respuesta ("entero numero=0;",false);
+	Respuesta r328 = new Respuesta ("int numero=0:",false);
+	Respuesta r329 = new Respuesta ("int numero=0;",true);
+	Respuesta r330 = new Respuesta ("int ‘Numero’=0;",false);
+	Respuesta []a84={r327,r328,r329,r330};
+	
+	Respuesta r331 = new Respuesta ("Una sentencia que permite decidir si se ejecuta o no se ejecuta una sola vez un bloque aislado de código",false);
+	Respuesta r332 = new Respuesta ("Una sentencia que ejecuta otra sentencia que a su vez ejecuta la primera sentencia",false);
+	Respuesta r333 = new Respuesta ("Una sentencia que permite ejecutar un bloque aislado de código varias veces hasta que se cumpla(o deje de cumplirse) la condición asignada al bucle",true);
+	Respuesta r334 = new Respuesta ("Las anteriores respuestas no son correctas",false);
+	Respuesta []a85={r331,r332,r333,r334};
+	
+	Respuesta r335 = new Respuesta ("Permite decidir si se ejecuta o no se ejecuta una sola vez un bloque aislado de código",true);
+	Respuesta r336 = new Respuesta ("Ejecuta otra sentencia que a su vez ejecuta la primera sentencia",false);
+	Respuesta r337 = new Respuesta ("Permite ejecutar un bloque aislado de código varias veces hasta que se cumpla(o deje de cumplirse) la condición asignada.",false);
+	Respuesta r338 = new Respuesta ("Las anteriores respuestas no son correctas",false);
+	Respuesta []a86={r335,r336,r337,r338};
+	
+	Respuesta r339 = new Respuesta ("Correcto",true);
+	Respuesta r340 = new Respuesta ("Incorrecto",false);
+	Respuesta r341 = new Respuesta ("Incorrecto",false);
+	Respuesta r342 = new Respuesta ("Incorrecto",false);
+	Respuesta []a87={r339,r340,r341,r342};
+	
+	
+	Respuesta r343 = new Respuesta ("Correcto",true);
+	Respuesta r344 = new Respuesta ("Incorrecto",false);
+	Respuesta r345 = new Respuesta ("Incorrecto",false);
+	Respuesta r346 = new Respuesta ("Incorrecto",false);
+	Respuesta []a88={r343,r344,r345,r346};
+	
+	
+	Respuesta r347 = new Respuesta ("Correcto",true);
+	Respuesta r348 = new Respuesta ("Incorrecto",false);
+	Respuesta r349 = new Respuesta ("Incorrecto",false);
+	Respuesta r350 = new Respuesta ("Incorrectoagonal derecha",false);
+	Respuesta []a89={r347,r348,r349,r350};
+	
+	Respuesta r351 = new Respuesta ("Correcto",true);
+	Respuesta r352 = new Respuesta ("Incorrecto",false);
+	Respuesta r353 = new Respuesta ("Incorrecto",false);
+	Respuesta r354 = new Respuesta ("Incorrecto",false);
+	Respuesta []a90={r351,r352,r353,r354};
+	
+	Respuesta r355 = new Respuesta ("Correcto",true);
+	Respuesta r356 = new Respuesta ("Incorrecto",false);
+	Respuesta r357 = new Respuesta ("Incorrecto",false);
+	Respuesta r358 = new Respuesta ("Incorrecto",false);
+	Respuesta []a91={r355,r356,r357,r358};
+	
+	Respuesta r359 = new Respuesta ("<a></a>",true);
+	Respuesta r360 = new Respuesta ("<link>",false);
+	Respuesta r361 = new Respuesta ("<style>",false);
+	Respuesta r362 = new Respuesta ("<div></div>",false);
+	Respuesta []a92={r359,r360,r361,r362};
+	
+	Respuesta r363 = new Respuesta ("<li>",false);
+	Respuesta r364 = new Respuesta ("<ol>",true);
+	Respuesta r365 = new Respuesta ("<ul>",false);
+	Respuesta r366 = new Respuesta ("<or>",false);
+	Respuesta []a93={r363,r364,r365,r366};
+	
+	Respuesta r367 = new Respuesta ("<ul>",true);
+	Respuesta r368 = new Respuesta ("<ol>",false);
+	Respuesta r369 = new Respuesta ("<li>",false);
+	Respuesta r370 = new Respuesta ("<des>",false);
+	Respuesta []a94={r367,r368,r369,r370};
+	
+	Respuesta r371 = new Respuesta ("<br />",true);
+	Respuesta r372 = new Respuesta ("<rb />",false);
+	Respuesta r373 = new Respuesta ("<jump>",false);
+	Respuesta r374 = new Respuesta ("<jm />",false);
+	Respuesta []a95={r371,r372,r373,r374};
+	
+	Respuesta r375 = new Respuesta ("<i>",false);
+	Respuesta r376 = new Respuesta ("<ng>",false);
+	Respuesta r377 = new Respuesta ("<br>",false);
+	Respuesta r378 = new Respuesta ("<b>",true);
+	Respuesta []a96={r375,r376,r377,r378};
+	
+	Respuesta r379 = new Respuesta ("<ng>",false);
+	Respuesta r380 = new Respuesta ("<br>",false);
+	Respuesta r381 = new Respuesta ("<i>",true);
+	Respuesta r382 = new Respuesta ("<b>",false);
+	Respuesta []a97={r379,r380,r381,r382};
+	
+	Respuesta r383 = new Respuesta ("font-family",true);
+	Respuesta r384 = new Respuesta ("font-style",false);
+	Respuesta r385 = new Respuesta ("font-variant",false);
+	Respuesta r386 = new Respuesta ("font-weight",false);
+	Respuesta []a98={r383,r384,r385,r386};
+	
+	Respuesta r387 = new Respuesta ("font-style",false);
+	Respuesta r388 = new Respuesta ("font-variant",true);
+	Respuesta r389 = new Respuesta ("font-style",false);
+	Respuesta r390 = new Respuesta ("font-weight",false);
+	Respuesta []a99={r387,r388,r389,r390};
+	
+	Respuesta r391 = new Respuesta ("font-style",false);
+	Respuesta r392 = new Respuesta ("font-weight",false);
+	Respuesta r393 = new Respuesta ("font-size",true);
+	Respuesta r394 = new Respuesta ("font-variant",false);
+	Respuesta []a100={r391,r392,r393,r394};
+		
+	Respuesta r395 = new Respuesta ("border-radius",true);
+	Respuesta r396 = new Respuesta ("border-form",false);
+	Respuesta r397 = new Respuesta ("border-image",false);
+	Respuesta r398 = new Respuesta ("border-shadow",false);
+	Respuesta []a101={r395,r396,r397,r398};
+	
+	
+	Respuesta r399 = new Respuesta ("...puedo tenerlos juntos en un zócalo, es lo que se llama tener varios núcleos",false);
+	Respuesta r400 = new Respuesta ("...necesito tener 2 placas base, ya que cada placa base sólo dispone de 1 zócalo",false);
+	Respuesta r401 = new Respuesta ("...necesito tener una placa base con 2 zócalos",true);
+	Respuesta r402 = new Respuesta ("...necesito tener 2 placas base que tengan 2 zócalos cada una",false);
+	Respuesta []a102={r399,r400,r401,r402};
+	
+	Respuesta r403 = new Respuesta ("Registro de estado",false);
+	Respuesta r404 = new Respuesta ("Memoria",true);
+	Respuesta r405 = new Respuesta ("Cabezal de lectura/escritura",false);
+	Respuesta r406 = new Respuesta ("Todas las opciones son elementos de la máquina de Turing",false);
+	Respuesta []a103={r403,r404,r405,r406};
+	
+	Respuesta r407 = new Respuesta ("Memoria principal",true);
+	Respuesta r408 = new Respuesta ("Memoria caché",false);
+	Respuesta r409 = new Respuesta ("Ninguna de las otras opciones",false);
+	Respuesta r410 = new Respuesta ("Registros",false);
+	Respuesta []a104={r407,r408,r409,r410};
+	
+	Respuesta r411 = new Respuesta ("Tienen un acceso más rápido",true);
+	Respuesta r412 = new Respuesta ("Tienen mayor capacidad",false);
+	Respuesta r413 = new Respuesta ("Son más baratas",false);
+	Respuesta r414 = new Respuesta ("Pesan poco",false);
+	Respuesta []a105={r411,r412,r413,r414};
+	
+	Respuesta r415 = new Respuesta ("Los directorios no tienen extensión en el nombre",false);
+	Respuesta r416 = new Respuesta ("Los directorios tienen en el primer carácter de la línea un guión",false);
+	Respuesta r417 = new Respuesta ("Los ficheros tienen en el primer carácter de la línea una d",false);
+	Respuesta r418 = new Respuesta ("Ninguna de las otras respuestas es correcta",true);
+	Respuesta []a106={r415,r416,r417,r418};
+	
+	Respuesta r419 = new Respuesta ("Ninguna de las anteriores",true);
+	Respuesta r420 = new Respuesta ("Con la opción -b",false);
+	Respuesta r421 = new Respuesta ("Con la opción -kb",false);
+	Respuesta r422 = new Respuesta ("Con la opción -c",false);
+	Respuesta []a107={r419,r420,r421,r422};
+	
+	Respuesta r423 = new Respuesta ("superuser",false);
+	Respuesta r424 = new Respuesta ("root",false);
+	Respuesta r425 = new Respuesta ("su",true);
+	Respuesta r426 = new Respuesta ("sudo",false);
+	Respuesta []a108={r423,r424,r425,r426};
+	
+	Respuesta r427 = new Respuesta ("chpass",false);
+	Respuesta r428 = new Respuesta ("passwd",true);
+	Respuesta r429 = new Respuesta ("password",false);
+	Respuesta r430 = new Respuesta ("chown",false);
+	Respuesta []a109={r427,r428,r429,r430};
+	
+	Respuesta r431 = new Respuesta ("adduser",true);
+	Respuesta r432 = new Respuesta ("chmod",false);
+	Respuesta r433 = new Respuesta ("chown",false);
+	Respuesta r434 = new Respuesta ("passwd",false);
+	Respuesta []a110={r431,r432,r433,r434};
+	
+	Respuesta r435 = new Respuesta ("chown",false);
+	Respuesta r436 = new Respuesta ("chadd",false);
+	Respuesta r437 = new Respuesta ("chmod",true);
+	Respuesta r438 = new Respuesta ("passwd",false);
+	Respuesta []a111={r435,r436,r437,r438};
+	
+	Respuesta r439 = new Respuesta ("Administraciones públicas y empresas privadas",true);
+	Respuesta r440 = new Respuesta ("Empleadores activos y empleadores inactivos",false);
+	Respuesta r441 = new Respuesta ("Empleadores ocupados y empleadores activos",false);
+	Respuesta r442 = new Respuesta ("Empleadores activos y empresas privadas",false);
+	Respuesta []a112={r439,r440,r441,r442};
+	
+	Respuesta r443 = new Respuesta ("Activos e inactivos",false);
+	Respuesta r444 = new Respuesta ("Activos y ocupados",false);
+	Respuesta r445 = new Respuesta ("Activos y total de la población",false);
+	Respuesta r446 = new Respuesta ("Activos y mayores de 16 años",true);
+	Respuesta []a113={r443,r444,r445,r446};
+	
+	Respuesta r447 = new Respuesta ("Ploteus",false);
+	Respuesta r448 = new Respuesta ("ECVET",false);
+	Respuesta r449 = new Respuesta ("EQAVET",true);
+	Respuesta r450 = new Respuesta ("EQF",false);
+	Respuesta []a114={r447,r448,r449,r450};
+	
+	Respuesta r451 = new Respuesta ("Sólo se fijan en objetivos a corto plazo",false);
+	Respuesta r452 = new Respuesta ("Es susceptible de modificarse",false);
+	Respuesta r453 = new Respuesta ("Está basado en datos rigurosos y fiables",true);
+	Respuesta r454 = new Respuesta ("Las tres respuestas son correctas",false);
+	Respuesta []a115={r451,r452,r453,r454};
+	
+	Respuesta r455 = new Respuesta ("No asumir riesgos",false);
+	Respuesta r456 = new Respuesta ("Autonomía e independencia",true);
+	Respuesta r457 = new Respuesta ("Seguridad en el empleo",false);
+	Respuesta r458 = new Respuesta ("Movilidad",false);
+	Respuesta []a116={r455,r456,r457,r458};
+	
+	Respuesta r459 = new Respuesta ("Redactarse utilizando palabras técnicas",false);
+	Respuesta r460 = new Respuesta ("Ir firmado",true);
+	Respuesta r461 = new Respuesta ("Redactarse utilizando el ordenador",false);
+	Respuesta r462 = new Respuesta ("Redactarse en primera persona",false);
+	Respuesta []a117={r459,r460,r461,r462};
+	
+	Respuesta r463 = new Respuesta ("Facilitar la movilidad laboral y formativa a través de los países miembros de la UE",true);
+	Respuesta r464 = new Respuesta ("Buscar empleo en Europa",false);
+	Respuesta r465 = new Respuesta ("Redactar un CV a nivel europeo",false);
+	Respuesta r466 = new Respuesta ("Obtener el título superior de FP",false);
+	Respuesta []a118={r463,r464,r465,r466};
+	
+	Respuesta r467 = new Respuesta ("La identidad, la continuidad y la autoridad compartida",false);
+	Respuesta r468 = new Respuesta ("La identidad, la colectividad y la autoridad compartida",false);
+	Respuesta r469 = new Respuesta ("La identidad, la continuidad y la colectividad",true);
+	Respuesta r470 = new Respuesta ("La continuidad, la colectividad y la autoridad compartida",false);
+	Respuesta []a119={r467,r468,r469,r470};
+	
+	Respuesta r471 = new Respuesta ("La responsabilidad compartida, la especialización y los objetivos comunes",true);
+	Respuesta r472 = new Respuesta ("La responsabilidad compartida, la permanencia y los objetivos comunes",false);
+	Respuesta r473 = new Respuesta ("La responsabilidad compartida, la especialización y la permanencia",false);
+	Respuesta r474 = new Respuesta ("La permanencia, la especialización y los objetivos comunes",false);
+	Respuesta []a120={r471,r472,r473,r474};
+	
+	Respuesta r475 = new Respuesta ("El escaso reconocimiento",false);
+	Respuesta r476 = new Respuesta ("El clima laboral",false);
+	Respuesta r477 = new Respuesta ("La desmotivación",true);
+	Respuesta r478 = new Respuesta ("La excesiva complejidad",false);
+	Respuesta []a121={r475,r476,r477,r477};
+		
 }
 
