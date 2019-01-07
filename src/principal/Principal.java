@@ -7,6 +7,7 @@ import vista.ImprimirIntrucciones;
 import crud.Crudpartida;
 import datos.datosPreguntas;
 import model.Partida;
+import crud.CrudActividades;
 import crud.CrudJugador;
 import controller.controllerPartida;
 
@@ -30,12 +31,13 @@ public class Principal {
 		Jugador[] listaJug;
 		String nombreJug;
 		datosPreguntas dp0 = new datosPreguntas();
-		Crudpartida cp= new Crudpartida();
+		Crudpartida cp = new Crudpartida();
 		Partida p;
-		Jugador j1=new Jugador();
-		CrudJugador cj=new CrudJugador();
-		controllerPartida conp=new controllerPartida();
-		
+		Jugador j1 = new Jugador();
+		CrudJugador cj = new CrudJugador();
+		CrudActividades a1 = new CrudActividades();
+		controllerPartida conp = new controllerPartida();
+
 		// Pantallas iniciales
 
 		ImprimirIntroduccion.imprimirIntroduccion();
@@ -58,16 +60,46 @@ public class Principal {
 			Jugador j = new Jugador(nombreJug, puntuacion, comodines, eleccion);
 			listaJug[i] = j;
 		}
-		p=cp.crearPartida(numjugadores, puntVictoria, probComodin, probRobarComodin, listaJug, dp0.obtenerPreguntas(), dp0.obtenerRetos());
-				
+		p = cp.crearPartida(numjugadores, puntVictoria, probComodin, probRobarComodin, listaJug, dp0.obtenerPreguntas(),
+				dp0.obtenerRetos());
+
 		// Elegimos quién comienza
-		
+
+		/*
+		 * conp.limpiarPantalla(); System.out.println("Vamos a elegir quién comienza.");
+		 * System.out.printf("%s, ¡te ha tocado empezar!\n\n",cp.elegirTurno(p).
+		 * getNombre());
+		 */
+		// Primera ronda
 		conp.limpiarPantalla();
-		System.out.println("Vamos a elegir quién comienza.");
-		System.out.printf("%s, ¡te ha tocado empezar!\n\n",cp.elegirTurno(p).getNombre());
-		
-		//Primera ronda
-		
+		for (int i = 0; i < numjugadores; i++) {
+			j1 = listaJug[i];
+			System.out.printf("Turno de %s.\n", j1.getNombre());
+			System.out.println(
+					"Escriba [1] para elegir una pregunta normal.\nEscriba[2] para reto o pregunta específica.");
+			int opcion;
+			opcion = Leer.datoInt();
+			switch (opcion) {
+			case 1:
+				j1.setEleccion(true);
+				break;
+			case 2:
+				j1.setEleccion(false);
+				break;
+			default:
+				System.out.println("Opción incorrecta.");
+			}
+			
+			a1.imprimirPregunta(j1.isEleccion());
+			conp.limpiarPantalla();
+		}
+		conp.limpiarPantalla();
+		System.out.println("Así están los marcadores:\n");
+		for (int i = 0; i < numjugadores; i++) {
+			j1 = listaJug[i];
+			System.out.printf("%s: %d puntos.\n",j1.getNombre(),j1.getPuntuacion());
+		}
+
 		for (int i = 0; i < numjugadores; i++) {
 			System.out.println(listaJug[i]);
 		}
