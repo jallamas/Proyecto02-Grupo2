@@ -75,29 +75,36 @@ public class Principal {
 		for (int i = 0; i < numjugadores; i++) {
 			j1 = listaJug[i];
 			System.out.printf("Turno de %s.\n", j1.getNombre());
-			System.out.println(
-					"Escriba [1] para elegir una pregunta normal.\nEscriba[2] para reto o pregunta específica.");
 			int opcion;
-			opcion = Leer.datoInt();
-			switch (opcion) {
-			case 1:
-				j1.setEleccion(true);
-				break;
-			case 2:
-				j1.setEleccion(false);
-				break;
-			default:
-				System.out.println("Opción incorrecta.");
-			}
-			
+			do {
+				System.out.println(
+						"Escriba [1] para elegir una pregunta normal.\nEscriba[2] para reto o pregunta específica.");
+
+				opcion = Leer.datoInt();
+				switch (opcion) {
+				case 1:
+					j1.setEleccion(true);
+					break;
+				case 2:
+					j1.setEleccion(false);
+					break;
+				default:
+					System.out.println("Opción incorrecta.");
+				}
+			} while (opcion != 1 && opcion != 2);
+
 			a1.imprimirPregunta(j1.isEleccion());
+			System.out.println("Elija la respuesta correcta:");
+			opcion = Leer.datoInt();
 			conp.limpiarPantalla();
 		}
 		conp.limpiarPantalla();
 		System.out.println("Así están los marcadores:\n");
-		for (int i = 0; i < numjugadores; i++) {
+		for (
+
+				int i = 0; i < numjugadores; i++) {
 			j1 = listaJug[i];
-			System.out.printf("%s: %d puntos.\n",j1.getNombre(),j1.getPuntuacion());
+			System.out.printf("%s: %d puntos.\n", j1.getNombre(), j1.getPuntuacion());
 		}
 
 		for (int i = 0; i < numjugadores; i++) {
