@@ -33,4 +33,6 @@ public class Crudpartida {
 		int ale=r.nextInt(p.getNumjugadores());
 		return p.getJugadores()[ale];
 	}
+	//TODO Metodo para comprobar respuesta
 }
+

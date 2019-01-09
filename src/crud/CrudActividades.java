@@ -3,28 +3,43 @@ package crud;
 import java.util.Random;
 
 import model.Actividades;
-
+import model.Respuesta;
 import datos.datosPreguntas;
 
 public class CrudActividades {
 
 	datosPreguntas dp0 = new datosPreguntas();
-
+	
+	//TODO COMPROBAR FUNCIONAMIENTO DE ESTE METODO
 	// Método para mostrar una pregunta con sus respuestas
-	public void imprimirPregunta(boolean opcion) {
+	public int imprimirPregunta(boolean opcion) {
+		// Variables auxiliares
+		int tam = 4;
 		Random r = new Random();
-		Actividades[] arrayP = dp0.obtenerPreguntas();
-		Actividades[] arrayR = dp0.obtenerRetos();
+		Actividades[] arrayPre = dp0.obtenerPreguntas();
+		Actividades[] arrayRet = dp0.obtenerRetos();
+		Respuesta[] res = new Respuesta[tam];
+		Respuesta[] res2 = new Respuesta[tam];
+		int aleatoria = r.nextInt(arrayPre.length - 1) + 1;
+		res = arrayPre[aleatoria].getRespuestas();
+		res2 = arrayRet[aleatoria].getRespuestas();
 
 		if (opcion == true) {
-			int aleatoria = r.nextInt(arrayP.length - 1) + 1;
-			System.out.println(arrayP[aleatoria].getEnunciado());
-			System.out.println(arrayP[aleatoria].getRespuestas());
+			System.out.println(arrayPre[0].getEnunciado());
+			for (int i = 0; i < res.length; i++) {
+				System.out.printf("%d ", i + 1);
+				System.out.println(res[i].getTexto());
+			}
+
 		} else if (opcion == false) {
-			int aleatoria = r.nextInt(arrayR.length - 1) + 1;
-			System.out.println(arrayR[aleatoria].getEnunciado());
-			System.out.println(arrayR[aleatoria].getRespuestas());
+			System.out.println(arrayRet[0].getEnunciado());
+			for (int i = 0; i < res2.length; i++) {
+				System.out.printf("%d ", i + 1);
+				System.out.println(res2[i].getTexto());
+			}
 		}
+
+		return aleatoria;
 	}
 
 }
