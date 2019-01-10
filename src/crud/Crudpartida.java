@@ -24,16 +24,6 @@ public class Crudpartida {
 		return p;
 	}
 
-	// Elegimos quién empieza a jugar
-
-	public Jugador elegirTurno(Partida p) {
-		Random r = new Random();
-		System.out.println(p.getNumjugadores());
-		int ale = r.nextInt(p.getNumjugadores());
-		return p.getJugadores()[ale];
-	}
-
-	// TODO Metodo para comprobar respuesta
 	// Usar comodín
 	public void usarComodin(Jugador j) {
 		if (j.getComodines() > 0) {
@@ -49,7 +39,7 @@ public class Crudpartida {
 	}
 
 	// Respuesta o comodin
-	public void elegirSolucion(int opcion, boolean eleccion, Jugador j, Jugador[] listajug, int probcomodin, int probrobar) throws InterruptedException {
+	public void elegirSolucion(int opcion, boolean eleccion, Jugador j, Jugador[] listajug, int probcomodin, int probrobar) {
 		if (opcion == 0) {
 			usarComodin(j);
 		} else {

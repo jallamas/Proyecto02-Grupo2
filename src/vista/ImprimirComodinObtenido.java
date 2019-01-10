@@ -2,7 +2,7 @@ package vista;
 
 public class ImprimirComodinObtenido {
 
-	public static void imprimirObtenerComodin() throws InterruptedException {
+	public static void imprimirObtenerComodin() {
 
 		System.out.println("\t\t\t\t███████╗███╗   ██╗██╗  ██╗ ██████╗ ██████╗  █████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗ █████╗ \r\n" + 
 				"\t\t\t\t██╔════╝████╗  ██║██║  ██║██╔═══██╗██╔══██╗██╔══██╗██╔══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗\r\n" + 
@@ -12,7 +12,6 @@ public class ImprimirComodinObtenido {
 				"\t\t\t\t╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝\r\n" + 
 				"                                                                                              ");
 		System.out.println("");
-		Thread.sleep(300);
 		System.out.println("\t\t\t\t\t\t\t\t                (( _______\r\n" + 
 				"\t\t\t\t\t\t\t\t      _______     /\\O    O\\\r\n" + 
 				"\t\t\t\t\t\t\t\t     /O     /\\   /  \\      \\\r\n" + 
@@ -26,7 +25,6 @@ public class ImprimirComodinObtenido {
 		
 		System.out.println("");
 		System.out.println("");
-		Thread.sleep(300);
 		System.out.println(" \t\t██████╗ ██████╗ ███╗   ███╗ ██████╗ ██████╗ ██╗███╗   ██╗     ██████╗ ██████╗ ████████╗███████╗███╗   ██╗██╗██████╗  ██████╗ \r\n" + 
 				"\t\t██╔════╝██╔═══██╗████╗ ████║██╔═══██╗██╔══██╗██║████╗  ██║    ██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝████╗  ██║██║██╔══██╗██╔═══██╗\r\n" + 
 				"\t\t██║     ██║   ██║██╔████╔██║██║   ██║██║  ██║██║██╔██╗ ██║    ██║   ██║██████╔╝   ██║   █████╗  ██╔██╗ ██║██║██║  ██║██║   ██║\r\n" + 

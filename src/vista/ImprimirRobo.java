@@ -1,7 +1,7 @@
 package vista;
 
 public class ImprimirRobo {
-	public static void imprimirRobo() throws InterruptedException {
+	public static void imprimirRobo() {
 		System.out.println("				   ;;;;;;,\r\n" + 
 				"                                ,;;;'\"\"`;;\\\r\n" + 
 				"                              ,;;;/  .'`',;\\\r\n" + 
@@ -44,7 +44,6 @@ public class ImprimirRobo {
 				"                      \"\"\"      /.`\\\r\n" + 
 				"                               \\|_/");
 		System.out.println("");
-		Thread.sleep(300);
 		System.out.println("   ▄████████  ▄██████▄  ▀█████████▄     ▄████████      ███    █▄  ███▄▄▄▄         ▄████████  ▄██████▄    ▄▄▄▄███▄▄▄▄    ▄██████▄  ████████▄   ▄█  ███▄▄▄▄   \r\n" + 
 				"  ███    ███ ███    ███   ███    ███   ███    ███      ███    ███ ███▀▀▀██▄      ███    ███ ███    ███ ▄██▀▀▀███▀▀▀██▄ ███    ███ ███   ▀███ ███  ███▀▀▀██▄ \r\n" + 
 				"  ███    ███ ███    ███   ███    ███   ███    ███      ███    ███ ███   ███      ███    █▀  ███    ███ ███   ███   ███ ███    ███ ███    ███ ███▌ ███   ███ \r\n" + 

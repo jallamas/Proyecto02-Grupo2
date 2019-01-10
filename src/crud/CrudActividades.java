@@ -47,7 +47,7 @@ public class CrudActividades {
 
 	}
 
-	public void comprobarRespuesta(int opcion, boolean elegir, Jugador j1, Jugador[] listajug, int probcomodin, int probrobar) throws InterruptedException {
+	public void comprobarRespuesta(int opcion, boolean elegir, Jugador j1, Jugador[] listajug, int probcomodin, int probrobar) {
 		// Variables auxiliares
 		int nuevaPuntuacion;
 		int uno = 1;
