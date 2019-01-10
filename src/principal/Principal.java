@@ -97,7 +97,8 @@ public class Principal {
 			System.out.println("0. Usar un comodín.");
 			System.out.println("Elija la respuesta correcta o utilice un comodín:");
 			opcion = Leer.datoInt();
-			cp.elegirSolucion(opcion, j1);
+			cp.elegirSolucion(opcion, j1.isEleccion(),j1);
+					
 			conp.limpiarPantalla();
 		}
 		conp.limpiarPantalla();

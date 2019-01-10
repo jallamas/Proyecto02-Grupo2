@@ -63,6 +63,7 @@ public class CrudActividades {
 				nuevaPuntuacion = j1.getPuntuacion() + uno;
 				j1.setPuntuacion(nuevaPuntuacion);
 				System.out.println("Respuesta correcta");
+				
 			} else if (aux[opcion - 1].getVerdaderoFalso() == false) {
 				System.out.println("Respuesta incorrecta");
 			}
