@@ -38,6 +38,11 @@ public class Principal {
 		CrudActividades a1 = new CrudActividades();
 		controllerPartida conp = new controllerPartida();
 
+		// Variables auxiliares
+		int opcion = 0;
+		int rondaactual = 0;
+		int numganadores = 0;
+
 		// Pantallas iniciales
 
 		ImprimirIntroduccion.imprimirIntroduccion();
@@ -63,19 +68,12 @@ public class Principal {
 		p = cp.crearPartida(numjugadores, puntVictoria, probComodin, probRobarComodin, listaJug, dp0.obtenerPreguntas(),
 				dp0.obtenerRetos());
 
-		// Elegimos quién comienza
-
-		/*
-		 * conp.limpiarPantalla(); System.out.println("Vamos a elegir quién comienza.");
-		 * System.out.printf("%s, ¡te ha tocado empezar!\n\n",cp.elegirTurno(p).
-		 * getNombre());
-		 */
-		// Primera ronda
+		// PRIMERA RONDA
 		conp.limpiarPantalla();
 		for (int i = 0; i < numjugadores; i++) {
 			j1 = listaJug[i];
+			conp.limpiarPantalla();
 			System.out.printf("Turno de %s.\n", j1.getNombre());
-			int opcion;
 			do {
 				System.out.println(
 						"Escriba [1] para elegir una pregunta normal.\nEscriba[2] para reto o pregunta específica.");
@@ -97,21 +95,45 @@ public class Principal {
 			System.out.println("0. Usar un comodín.");
 			System.out.println("Elija la respuesta correcta o utilice un comodín:");
 			opcion = Leer.datoInt();
-			cp.elegirSolucion(opcion, j1.isEleccion(),j1);
-					
-			conp.limpiarPantalla();
+			cp.elegirSolucion(opcion, j1.isEleccion(), j1);
 		}
 		conp.limpiarPantalla();
 		System.out.println("Así están los marcadores:\n");
-		for (
-
-				int i = 0; i < numjugadores; i++) {
+		for (int i = 0; i < numjugadores; i++) {
 			j1 = listaJug[i];
 			System.out.printf("%s: %d puntos.\n", j1.getNombre(), j1.getPuntuacion());
 		}
+		rondaactual = 1;
+		// SIGUIENTES RONDAS
+		do {
+			rondaactual++;
+			conp.limpiarPantalla();
+			System.out.printf("RONDA NÚMERO %d.\n", rondaactual);
+			for (int i = 0; i < numjugadores; i++) {
+				j1 = listaJug[i];
+				System.out.printf("Turno de %s.\n\n", j1.getNombre());
+				cj.cambiarEleccion(j1);
+				if (j1.isEleccion() == true) {
+					System.out.println("Le toca una pregunta normal.\n");
+				} else {
+					System.out.println("Le toca una pregunta específica o un reto.\n");
+				}
+				a1.imprimirPregunta(j1.isEleccion());
+				System.out.println("0. Usar un comodín.");
+				System.out.println("\nElija la respuesta correcta o utilice un comodín:");
+				opcion = Leer.datoInt();
+				cp.elegirSolucion(opcion, j1.isEleccion(), j1);
+			}
+			conp.limpiarPantalla();
+			System.out.println("Así están los marcadores:\n");
+			for (int i = 0; i < numjugadores; i++) {
+				j1 = listaJug[i];
+				System.out.printf("%s: %d puntos.\n", j1.getNombre(), j1.getPuntuacion());
+			}
 
-		for (int i = 0; i < numjugadores; i++) {
-			System.out.println(listaJug[i]);
-		}
+			for (int i = 0; i < numjugadores; i++) {
+				System.out.println(listaJug[i]);
+			}
+		} while (rondaactual < p.getNumMaxRondas() && numganadores == 0);
 	}
 }
