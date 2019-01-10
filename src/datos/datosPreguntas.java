@@ -88,7 +88,8 @@ public class datosPreguntas {
 		Respuesta r49 = new Respuesta ("Equilatero",true);
 		Respuesta r50 = new Respuesta ("Isósceles",false);
 		Respuesta r51 = new Respuesta ("Escaleno",false);
-		Respuesta []a13={r49,r50,r51};
+		Respuesta r052 = new Respuesta ("Acutángulo",false);
+		Respuesta []a13={r49,r50,r51,r052};
 		
 		Respuesta r52 = new Respuesta ("Oro",false);
 		Respuesta r53 = new Respuesta ("Platino",false);
@@ -249,7 +250,8 @@ public class datosPreguntas {
 		Respuesta r156 = new Respuesta ("Neoclásico",false);
 		Respuesta r157 = new Respuesta ("Románico",false);
 		Respuesta r158 = new Respuesta ("Gótico",true);
-		Respuesta []a40={r156,r157,r158};
+		Respuesta r0159 = new Respuesta ("Barroco",false);
+		Respuesta []a40={r156,r157,r158,r0159};
 		
 		Respuesta r159 = new Respuesta ("Mesopotamia",true);
 		Respuesta r160 = new Respuesta ("Egipcia",false);
@@ -388,12 +390,12 @@ public class datosPreguntas {
 		Respuesta r246 = new Respuesta ("Clave candidata",false);
 		Respuesta []a62={r243,r244,r245,r246};
 		
-		// RESPUESTAS A LA PREGUNTA 63, DEBIDO A UN ERROR HE TENIDO QUE LLAMARLAS POR RESPUESTAS 1000 HASTA 1003.
-		Respuesta r1000 = new Respuesta ("Prohibir la operación",false);
-		Respuesta r1001 = new Respuesta ("Colocar nulos",false);
-		Respuesta r1002 = new Respuesta ("Transmitir la operación en cascada",false);
-		Respuesta r1003 = new Respuesta ("No usar el valor en defecto",true);
-		Respuesta []a63={r1000,r1001,r1002,r1003};
+		// RESPUESTAS A LA PREGUNTA 63, DEBIDO A UN ERROR HE TENIDO QUE LLAMARLAS POR RESPUESTAS 0247 HASTA 0250.
+		Respuesta r0247 = new Respuesta ("Prohibir la operación",false);
+		Respuesta r0248 = new Respuesta ("Colocar nulos",false);
+		Respuesta r0249 = new Respuesta ("Transmitir la operación en cascada",false);
+		Respuesta r0250 = new Respuesta ("No usar el valor en defecto",true);
+		Respuesta []a63={r0247,r0248,r0249,r0250};
 		
 		Respuesta r247 = new Respuesta ("Atributo=Fila, Tupla=Columna",false);
 		Respuesta r248 = new Respuesta ("Atributo=Diagonal derecha, Tupla=Diagonal izquierda",false);
