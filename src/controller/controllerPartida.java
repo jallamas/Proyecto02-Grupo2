@@ -9,8 +9,7 @@ import vista.ImprimirRobo;
 
 public class controllerPartida {
 
-	public void generarEvento(Jugador j1, Jugador j2[], int probmascomodin, int probrobarcomodin)
-			throws InterruptedException {
+	public void generarEvento(Jugador j1, Jugador j2[], int probmascomodin, int probrobarcomodin) {
 		Random r = new Random();
 		int aleatorio = r.nextInt(100 - 1) + 1;
 		if (aleatorio <= probmascomodin) {
