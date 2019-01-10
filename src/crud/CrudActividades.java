@@ -6,13 +6,13 @@ import model.Actividades;
 import model.Jugador;
 import model.Respuesta;
 import datos.datosPreguntas;
+import controller.controllerPartida;
 
 public class CrudActividades {
 
 	datosPreguntas dp0 = new datosPreguntas();
 
-	// TODO COMPROBAR FUNCIONAMIENTO DE ESTE METODO
-	// Método para mostrar una pregunta con sus respuestas
+	// Mostrar una pregunta con sus respuestas
 	public int imprimirPregunta(boolean opcion) {
 		// Variables auxiliares
 		int tam = 4;
@@ -47,10 +47,11 @@ public class CrudActividades {
 
 	}
 
-	public void comprobarRespuesta(int opcion, boolean elegir, Jugador j1) {
+	public void comprobarRespuesta(int opcion, boolean elegir, Jugador j1, Jugador[] listajug, int probcomodin, int probrobar) throws InterruptedException {
 		// Variables auxiliares
 		int nuevaPuntuacion;
 		int uno = 1;
+		controllerPartida controlp=new controllerPartida();
 		Respuesta[] aux;
 		Respuesta[] aux2;
 		Actividades[] arrayPre = dp0.obtenerPreguntas();
@@ -63,7 +64,7 @@ public class CrudActividades {
 				nuevaPuntuacion = j1.getPuntuacion() + uno;
 				j1.setPuntuacion(nuevaPuntuacion);
 				System.out.println("Respuesta correcta");
-				
+				controlp.generarEvento(j1, listajug, probcomodin, probrobar);
 			} else if (aux[opcion - 1].getVerdaderoFalso() == false) {
 				System.out.println("Respuesta incorrecta");
 			}

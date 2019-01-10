@@ -552,7 +552,7 @@ public class datosPreguntas {
 		Respuesta r347 = new Respuesta ("Correcto",true);
 		Respuesta r348 = new Respuesta ("Incorrecto",false);
 		Respuesta r349 = new Respuesta ("Incorrecto",false);
-		Respuesta r350 = new Respuesta ("Incorrectoagonal derecha",false);
+		Respuesta r350 = new Respuesta ("Incorrecto",false);
 		Respuesta []a89={r347,r348,r349,r350};
 		
 		Respuesta r351 = new Respuesta ("Correcto",true);
