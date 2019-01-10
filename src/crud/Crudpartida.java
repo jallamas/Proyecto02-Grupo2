@@ -39,12 +39,43 @@ public class Crudpartida {
 	}
 
 	// Respuesta o comodin
-	public void elegirSolucion(int opcion, boolean eleccion, Jugador j, Jugador[] listajug, int probcomodin, int probrobar) {
+	public void elegirSolucion(int opcion, boolean eleccion, Jugador j, Jugador[] listajug, int probcomodin,
+			int probrobar) {
 		if (opcion == 0) {
 			usarComodin(j);
 		} else {
 			CrudActividades ca = new CrudActividades();
-			ca.comprobarRespuesta(opcion, eleccion, j, listajug, probcomodin,probrobar);
+			ca.comprobarRespuesta(opcion, eleccion, j, listajug, probcomodin, probrobar);
 		}
 	}
+
+	// Comprobar ganador alcanzando objetivo
+
+	public int comprobarGanador(Jugador[] lista, int puntosVictoria) {
+		int numeroGanadores = 0;
+		for (int i = 0; i < lista.length; i++) {
+			if (lista[i].getPuntuacion() >= puntosVictoria) {
+				System.out.printf("Enhorabuena %s, has ganado.\n\n", lista[i].getNombre());
+				numeroGanadores++;
+			}
+		}
+		return numeroGanadores;
+	}
+
+	// Comprobar ganador por puntos alcanzado el máximo de rondas.
+
+	public void comprobarPuntos(Jugador[] lista) {
+		int puntosganador = 0;
+		for (int i = 0; i < lista.length; i++) {
+			if (lista[i].getPuntuacion() > puntosganador) {
+				puntosganador = lista[i].getPuntuacion();
+			}
+		}
+		for (int i = 0; i < lista.length; i++) {
+			if (lista[i].getPuntuacion() == puntosganador) {
+				System.out.printf("Enhorabuena %s, has ganado.\n\n", lista[i].getNombre());
+			}
+		}
+	}
+
 }
