@@ -8,6 +8,7 @@ public class Test {
 //		ImprimirIntrucciones.imprimirInstrucciones();
 //		ImprimirCreditos.imprimirCreditos();
 //ImprimirIntroduccion.imprimirIntroduccion();
+		//ImprimirRobo.imprimirRobo();
 	}
 
 }

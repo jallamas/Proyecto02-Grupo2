@@ -2,7 +2,7 @@ package vista;
 
 public class ImprimirComodinObtenido {
 
-	public static void ImprimirObtenerComodin() throws InterruptedException {
+	public static void imprimirObtenerComodin() throws InterruptedException {
 
 		System.out.println("\t\t\t\t███████╗███╗   ██╗██╗  ██╗ ██████╗ ██████╗  █████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗ █████╗ \r\n" + 
 				"\t\t\t\t██╔════╝████╗  ██║██║  ██║██╔═══██╗██╔══██╗██╔══██╗██╔══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗\r\n" + 
