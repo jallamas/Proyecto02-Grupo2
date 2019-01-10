@@ -25,14 +25,14 @@ public class CrudActividades {
 		res2 = arrayRet[aleatoria].getRespuestas();
 
 		if (opcion == true) {
-			System.out.println(arrayPre[0].getEnunciado());
+			System.out.println(arrayPre[aleatoria].getEnunciado());
 			for (int i = 0; i < res.length; i++) {
 				System.out.printf("%d ", i + 1);
 				System.out.println(res[i].getTexto());
 			}
 
 		} else if (opcion == false) {
-			System.out.println(arrayRet[0].getEnunciado());
+			System.out.println(arrayRet[aleatoria].getEnunciado());
 			for (int i = 0; i < res2.length; i++) {
 				System.out.printf("%d ", i + 1);
 				System.out.println(res2[i].getTexto());
