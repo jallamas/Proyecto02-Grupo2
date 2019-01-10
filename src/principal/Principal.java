@@ -94,8 +94,10 @@ public class Principal {
 			} while (opcion != 1 && opcion != 2);
 
 			a1.imprimirPregunta(j1.isEleccion());
-			System.out.println("Elija la respuesta correcta:");
+			System.out.println("0. Usar un comodín.");
+			System.out.println("Elija la respuesta correcta o utilice un comodín:");
 			opcion = Leer.datoInt();
+			cp.elegirSolucion(opcion, j1);
 			conp.limpiarPantalla();
 		}
 		conp.limpiarPantalla();
