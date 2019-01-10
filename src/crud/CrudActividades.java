@@ -47,11 +47,11 @@ public class CrudActividades {
 
 	}
 
-	public void comprobarRespuesta(int opcion, boolean elegir, Jugador j1, Jugador[] listajug, int probcomodin, int probrobar) {
+	public void comprobarRespuesta(int opcion, boolean elegir, Jugador j1, Jugador[] listajug, int probcomodin,
+			int probrobar) {
 		// Variables auxiliares
-		int nuevaPuntuacion;
 		int uno = 1;
-		controllerPartida controlp=new controllerPartida();
+		controllerPartida controlp = new controllerPartida();
 		Respuesta[] aux;
 		Respuesta[] aux2;
 		Actividades[] arrayPre = dp0.obtenerPreguntas();
@@ -61,8 +61,8 @@ public class CrudActividades {
 
 		if (elegir == true) {
 			if (aux[opcion - 1].getVerdaderoFalso() == true) { // PREGUNTAS
-				nuevaPuntuacion = j1.getPuntuacion() + uno;
-				j1.setPuntuacion(nuevaPuntuacion);
+				j1.setPuntuacion(j1.getPuntuacion() + uno);
+
 				System.out.println("Respuesta correcta");
 				controlp.generarEvento(j1, listajug, probcomodin, probrobar);
 			} else if (aux[opcion - 1].getVerdaderoFalso() == false) {
@@ -70,11 +70,10 @@ public class CrudActividades {
 			}
 		} else if (elegir == false) { // RETOS
 			if (aux2[opcion - 1].getVerdaderoFalso() == true) {
-				nuevaPuntuacion = j1.getPuntuacion() + uno;
-				j1.setPuntuacion(nuevaPuntuacion);
+				j1.setPuntuacion(j1.getPuntuacion() + uno);
 				System.out.println("Respuesta correcta");
-
-			} else if (aux[opcion - 1].getVerdaderoFalso() == false) {
+				controlp.generarEvento(j1, listajug, probcomodin, probrobar);
+			} else if (aux2[opcion - 1].getVerdaderoFalso() == false) {
 				System.out.println("Respuesta incorrecta");
 			}
 		}
