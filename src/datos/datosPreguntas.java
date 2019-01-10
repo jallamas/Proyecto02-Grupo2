@@ -804,7 +804,7 @@ public class datosPreguntas {
 	Actividades e50 = new Actividades("¿Cómo se reproduce una estrella de mar?", 0, a50);
 	Actividades e51 = new Actividades("¿Cuál es el elemento químico cuyo símbolo es Pb", 0, a51);
 	Actividades e52 = new Actividades("El orden de los elementos en la tabla periódica tiene en cuenta:", 0, a52);
-	Actividades e53 = new Actividades("¿C¿Qué es una acacia??", 0, a53);
+	Actividades e53 = new Actividades("¿Qué es una acacia?", 0, a53);
 	Actividades e54 = new Actividades("La capa exterior del cuerpo humano se llama:", 0, a54);
 	Actividades e55 = new Actividades("¿Cómo puede ser la rima?", 0, a55);
 	Actividades e56 = new Actividades("¿En qué año entró el Euro como moneda única europea?", 0, a56);
@@ -817,7 +817,6 @@ public class datosPreguntas {
 	
 	//ENUNCIADOS DE LOS RETOS
 	Actividades e62 = new Actividades("¿Cúal de las siguientes claves no existe?(Base de Datos)", 1, a62);
-	
 	Actividades e63 = new Actividades("¿Cuál no es una restricción de actualización y eliminación?(Base de Datos)", 1, a63);
 	Actividades e64 = new Actividades("Selecciona los sinónimos correctos:(Base de Datos)", 1, a64);
 	Actividades e65 = new Actividades("¿Cuál de estos objetivos no es del modelo Realacional?(Base de datos)", 1, a65);
