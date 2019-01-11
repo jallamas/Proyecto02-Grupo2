@@ -7,7 +7,7 @@ import utilidades.Leer;
 import vista.ImprimirComodinObtenido;
 import vista.ImprimirRobo;
 
-public class controllerPartida {
+public class ControllerPartida {
 
 	public void generarEvento(Jugador j1, Jugador j2[], int probmascomodin, int probrobarcomodin) {
 		Random r = new Random();
@@ -44,7 +44,8 @@ public class controllerPartida {
 	}
 
 	public void limpiarPantalla() {
-		for (int i = 0; i < 15; i++) {
+		int lineas=10;
+		for (int i = 0; i < lineas; i++) {
 			System.out.println(" ");
 		}
 	}

@@ -3,9 +3,9 @@ package datos;
 import model.Actividades;
 import model.Respuesta;
 
-public class datosPreguntas {
+public class DatosPreguntas {
 		
-	public datosPreguntas() {
+	public DatosPreguntas() {
 		
 	}
 		

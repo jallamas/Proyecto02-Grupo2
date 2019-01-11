@@ -5,12 +5,12 @@ import java.util.Random;
 import model.Actividades;
 import model.Jugador;
 import model.Respuesta;
-import datos.datosPreguntas;
-import controller.controllerPartida;
+import datos.DatosPreguntas;
+import controller.ControllerPartida;
 
 public class CrudActividades {
 
-	datosPreguntas dp0 = new datosPreguntas();
+	DatosPreguntas dp0 = new DatosPreguntas();
 
 	// Mostrar una pregunta con sus respuestas
 	public int imprimirPregunta(boolean opcion) {
@@ -51,7 +51,7 @@ public class CrudActividades {
 			int probcomodin, int probrobar) {
 		// Variables auxiliares
 		int uno = 1;
-		controllerPartida controlp = new controllerPartida();
+		ControllerPartida controlp = new ControllerPartida();
 		Actividades[] arrayPre = dp0.obtenerPreguntas();
 		Actividades[] arrayRet = dp0.obtenerRetos();
 

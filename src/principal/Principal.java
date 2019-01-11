@@ -1,10 +1,10 @@
 package principal;
 
-import controller.controllerPartida;
+import controller.ControllerPartida;
 import crud.CrudActividades;
 import crud.CrudJugador;
 import crud.Crudpartida;
-import datos.datosPreguntas;
+import datos.DatosPreguntas;
 import model.Jugador;
 import model.Partida;
 import utilidades.Leer;
@@ -22,9 +22,9 @@ public class Principal {
 			int comodines = 1; // Número de comodines con los que comienza la partida un jugador
 			boolean eleccion = true; // True si ha elegido pregunta común y False si ha elegido Reto o pregunta
 										// específica.
-			int probComodin = 0; // Porcentaje de probabilidad de que te "toque" un comodín al responder
+			int probComodin = 20; // Porcentaje de probabilidad de que te "toque" un comodín al responder
 									// correctamente una pregunta
-			int probRobarComodin = 100; // Porcentaje de probabilidad de que se te permita "robar" un comodín a un
+			int probRobarComodin = 20; // Porcentaje de probabilidad de que se te permita "robar" un comodín a un
 										// compañero al responder correctamente una pregunta
 
 			// Variables para crear la partida
@@ -33,13 +33,13 @@ public class Principal {
 			int puntVictoria = 0; // Puntos necesarios para ganar.
 			Jugador[] listaJug;
 			String nombreJug;
-			datosPreguntas dp0 = new datosPreguntas();
+			DatosPreguntas dp0 = new DatosPreguntas();
 			Crudpartida cp = new Crudpartida();
 			Partida p;
 			Jugador j1 = new Jugador();
 			CrudJugador cj = new CrudJugador();
 			CrudActividades a1 = new CrudActividades();
-			controllerPartida conp = new controllerPartida();
+			ControllerPartida conp = new ControllerPartida();
 
 			// Variables auxiliares
 			int opcion = 0;
@@ -168,6 +168,6 @@ public class Principal {
 			System.out.println(
 					"¿Desea jugar otra partida?. Escriba [1] para jugar o cualquier otro número para terminar.");
 			terminar = Leer.datoInt();
-		} while (terminar != 1);
+		} while (terminar == 1);
 	}
 }

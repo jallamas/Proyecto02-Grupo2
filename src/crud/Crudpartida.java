@@ -50,7 +50,7 @@ public class Crudpartida {
 		int numeroGanadores = 0;
 		for (int i = 0; i < lista.length; i++) {
 			if (lista[i].getPuntuacion() >= puntosVictoria) {
-				System.out.printf("Enhorabuena %s, has ganado.\n\n", lista[i].getNombre());
+				System.out.printf("ENHORABUENA!!! %s, HAS GANADO!!!\n\n", lista[i].getNombre());
 				numeroGanadores++;
 			}
 		}
@@ -68,7 +68,7 @@ public class Crudpartida {
 		}
 		for (int i = 0; i < lista.length; i++) {
 			if (lista[i].getPuntuacion() == puntosganador) {
-				System.out.printf("Enhorabuena %s, has ganado.\n\n", lista[i].getNombre());
+				System.out.printf("ENHORABUENA!!! %s, HAS GANADO!!!\n\n", lista[i].getNombre());
 			}
 		}
 	}
