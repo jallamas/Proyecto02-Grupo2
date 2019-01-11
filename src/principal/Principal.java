@@ -109,7 +109,7 @@ public class Principal {
 					} while (opcion < uno || opcion > cuatro);
 				}
 
-				cp.elegirSolucion(opcion, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
+				cp.elegirSolucion(opcion,numeropregunta, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
 			}
 			conp.limpiarPantalla();
 			System.out.println("Así están los marcadores:\n");
@@ -146,7 +146,7 @@ public class Principal {
 							} while (opcion < uno || opcion > cuatro);
 						}
 
-						cp.elegirSolucion(opcion, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
+						cp.elegirSolucion(opcion,numeropregunta, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
 					}
 					conp.limpiarPantalla();
 					System.out.println("Así están los marcadores:\n");

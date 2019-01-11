@@ -47,41 +47,38 @@ public class CrudActividades {
 
 	}
 
-	public void comprobarRespuesta(int opcion, boolean elegir, Jugador j1, Jugador[] listajug, int probcomodin,
-			int probrobar) {
+	public void comprobarRespuesta(int opcion, int aleatorio, boolean elegir, Jugador j1, Jugador[] listajug,
+			int probcomodin, int probrobar) {
 		// Variables auxiliares
 		int uno = 1;
 		controllerPartida controlp = new controllerPartida();
-		Respuesta[] aux;
-		Respuesta[] aux2;
 		Actividades[] arrayPre = dp0.obtenerPreguntas();
 		Actividades[] arrayRet = dp0.obtenerRetos();
-		aux = arrayPre[opcion - 1].getRespuestas();
-		aux2 = arrayRet[opcion - 1].getRespuestas();
 
 		if (elegir == true) {
-			if (aux[opcion - 1].getVerdaderoFalso() == true) { // PREGUNTAS
+			if (arrayPre[aleatorio].getRespuestas()[opcion-1].getVerdaderoFalso() == true) { // PREGUNTAS
 				j1.setPuntuacion(j1.getPuntuacion() + uno);
 
 				System.out.println("Respuesta correcta");
 				controlp.generarEvento(j1, listajug, probcomodin, probrobar);
-			} else if (aux[opcion - 1].getVerdaderoFalso() == false) {
+			} else if (arrayPre[aleatorio].getRespuestas()[opcion-1].getVerdaderoFalso() == false) {
 				System.out.println("Respuesta incorrecta");
 			}
 		} else if (elegir == false) { // RETOS
-			if (aux2[opcion - 1].getVerdaderoFalso() == true) {
+			if (arrayRet[aleatorio].getRespuestas()[opcion-1].getVerdaderoFalso() == true) {
 				j1.setPuntuacion(j1.getPuntuacion() + uno);
 				System.out.println("Respuesta correcta");
 				controlp.generarEvento(j1, listajug, probcomodin, probrobar);
-			} else if (aux2[opcion - 1].getVerdaderoFalso() == false) {
+			} else if (arrayRet[aleatorio].getRespuestas()[opcion-1].getVerdaderoFalso() == false) {
 				System.out.println("Respuesta incorrecta");
 			}
 		}
 	}
+
 	public int imprimirPreguntaSinComodin(boolean opcion, int numeropregunta) {
 		// Variables auxiliares
 		int tam = 4;
-		
+
 		Actividades[] arrayPre = dp0.obtenerPreguntas();
 		Actividades[] arrayRet = dp0.obtenerRetos();
 		Respuesta[] res = new Respuesta[tam];

@@ -34,13 +34,13 @@ public class Crudpartida {
 	}
 
 	// Respuesta o comodin
-	public void elegirSolucion(int opcion, boolean eleccion, Jugador j, Jugador[] listajug, int probcomodin,
+	public void elegirSolucion(int opcion, int aleatorio,boolean eleccion, Jugador j, Jugador[] listajug, int probcomodin,
 			int probrobar) {
 		if (opcion == 0) {
 			usarComodin(j);
 		} else {
 			CrudActividades ca = new CrudActividades();
-			ca.comprobarRespuesta(opcion, eleccion, j, listajug, probcomodin, probrobar);
+			ca.comprobarRespuesta(opcion, aleatorio, eleccion, j, listajug, probcomodin, probrobar);
 		}
 	}
 
