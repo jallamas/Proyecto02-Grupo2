@@ -30,11 +30,7 @@ public class Crudpartida {
 			j.setPuntuacion(j.getPuntuacion() + 1);
 			System.out.println("Has usado un comodín.");
 			System.out.printf("Te quedan %d comodines", j.getComodines());
-
-		} else {
-			System.out.println("Lo sentimos. No tienes comodines disponibles.");
-			System.out.println("Elige una respuesta.");
-		}
+		} 
 	}
 
 	// Respuesta o comodin

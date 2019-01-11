@@ -78,4 +78,38 @@ public class CrudActividades {
 			}
 		}
 	}
+	public int imprimirPreguntaSinComodin(boolean opcion, int numeropregunta) {
+		// Variables auxiliares
+		int tam = 4;
+		
+		Actividades[] arrayPre = dp0.obtenerPreguntas();
+		Actividades[] arrayRet = dp0.obtenerRetos();
+		Respuesta[] res = new Respuesta[tam];
+		Respuesta[] res2 = new Respuesta[tam];
+		int aleatoriaP = numeropregunta;
+		int aleatoriaRet = numeropregunta;
+		res = arrayPre[numeropregunta].getRespuestas();
+		res2 = arrayRet[numeropregunta].getRespuestas();
+
+		if (opcion == true) {
+			System.out.println(arrayPre[aleatoriaP].getEnunciado());
+			for (int i = 0; i < res.length; i++) {
+				System.out.printf("%d. ", i + 1);
+				System.out.println(res[i].getTexto());
+			}
+
+		} else if (opcion == false) {
+			System.out.println(arrayRet[aleatoriaRet].getEnunciado());
+			for (int i = 0; i < res2.length; i++) {
+				System.out.printf("%d. ", i + 1);
+				System.out.println(res2[i].getTexto());
+			}
+		}
+		if (opcion == true) {
+			return aleatoriaP;
+		} else
+			return aleatoriaRet;
+
+	}
+
 }

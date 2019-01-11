@@ -17,8 +17,7 @@ public class controllerPartida {
 			darComodin(j1);
 		} else if (aleatorio > probmascomodin && aleatorio <= probrobarcomodin) {
 			ImprimirRobo.imprimirRobo();
-			darComodin(j1);
-			robarComodin(j2);
+			robarComodin(j1,j2);
 		}
 
 	}
@@ -28,19 +27,20 @@ public class controllerPartida {
 		j1.setComodines(j1.getComodines() + uno);
 	}
 
-	public static void robarComodin(Jugador j2[]) {
+	public static void robarComodin(Jugador j,Jugador j2[]) {
 		int opcion;
 		int uno = 1;
+		darComodin(j);
 		ImprimirJugadores.ImprimirJugador(j2);
 		do {
 			System.out.println("Elija una opción");
 			opcion = Leer.datoInt();
 			if (j2[opcion - uno].getComodines() != 0) {
-				j2[opcion - 1].setComodines(j2[opcion - uno].getComodines() - uno);
 			} else {
 				System.out.println("Este jugador no tiene comodines, elije otro");
 			}
-		} while (j2[opcion - 1].getComodines() == 0);
+		} while (j2[opcion - uno].getComodines() == 0);
+		j2[opcion - uno].setComodines(j2[opcion - uno].getComodines() - uno);
 	}
 
 	public void limpiarPantalla() {

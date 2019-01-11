@@ -22,9 +22,9 @@ public class Principal {
 			int comodines = 1; // Número de comodines con los que comienza la partida un jugador
 			boolean eleccion = true; // True si ha elegido pregunta común y False si ha elegido Reto o pregunta
 										// específica.
-			int probComodin = 10; // Porcentaje de probabilidad de que te "toque" un comodín al responder
+			int probComodin = 0; // Porcentaje de probabilidad de que te "toque" un comodín al responder
 									// correctamente una pregunta
-			int probRobarComodin = 10; // Porcentaje de probabilidad de que se te permita "robar" un comodín a un
+			int probRobarComodin = 100; // Porcentaje de probabilidad de que se te permita "robar" un comodín a un
 										// compañero al responder correctamente una pregunta
 
 			// Variables para crear la partida
@@ -46,6 +46,7 @@ public class Principal {
 			int rondaactual = 0;
 			int numganadores = 0;
 			int numeropregunta = 0;
+			int uno = 1, cuatro = 4;
 
 			// Pantallas iniciales
 
@@ -99,6 +100,15 @@ public class Principal {
 				System.out.println("0. Usar un comodín.");
 				System.out.println("Elija la respuesta correcta o utilice un comodín:");
 				opcion = Leer.datoInt();
+				if (opcion == 0 && j1.getComodines() == 0) {
+					System.out.println("Lo sentimos. No tienes comodines disponibles.");
+					do {
+						System.out.println("Elige una respuesta.");
+						a1.imprimirPreguntaSinComodin(j1.isEleccion(), numeropregunta);
+						opcion = Leer.datoInt();
+					} while (opcion < uno || opcion > cuatro);
+				}
+
 				cp.elegirSolucion(opcion, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
 			}
 			conp.limpiarPantalla();
@@ -127,6 +137,15 @@ public class Principal {
 						System.out.println("0. Usar un comodín.");
 						System.out.println("\nElija la respuesta correcta o utilice un comodín:");
 						opcion = Leer.datoInt();
+						if (opcion == 0 && j1.getComodines() == 0) {
+							System.out.println("Lo sentimos. No tienes comodines disponibles.");
+							do {
+								System.out.println("Elige una respuesta.");
+								a1.imprimirPreguntaSinComodin(j1.isEleccion(), numeropregunta);
+								opcion = Leer.datoInt();
+							} while (opcion < uno || opcion > cuatro);
+						}
+
 						cp.elegirSolucion(opcion, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
 					}
 					conp.limpiarPantalla();
