@@ -42,6 +42,7 @@ public class Principal {
 		int opcion = 0;
 		int rondaactual = 0;
 		int numganadores = 0;
+		int numeropregunta=0;
 
 		// Pantallas iniciales
 
@@ -91,7 +92,7 @@ public class Principal {
 				}
 			} while (opcion != 1 && opcion != 2);
 
-			a1.imprimirPregunta(j1.isEleccion());
+			numeropregunta=a1.imprimirPregunta(j1.isEleccion());
 			System.out.println("0. Usar un comodín.");
 			System.out.println("Elija la respuesta correcta o utilice un comodín:");
 			opcion = Leer.datoInt();
@@ -119,7 +120,7 @@ public class Principal {
 					} else {
 						System.out.println("Le toca una pregunta específica o un reto.\n");
 					}
-					a1.imprimirPregunta(j1.isEleccion());
+					numeropregunta=a1.imprimirPregunta(j1.isEleccion());
 					System.out.println("0. Usar un comodín.");
 					System.out.println("\nElija la respuesta correcta o utilice un comodín:");
 					opcion = Leer.datoInt();
@@ -135,9 +136,11 @@ public class Principal {
 				for (int i = 0; i < numjugadores; i++) {
 					System.out.println(listaJug[i]);
 				}
-				cp.comprobarGanador(listaJug, puntVictoria);
+				numganadores=cp.comprobarGanador(listaJug, puntVictoria);
 			} while (rondaactual < p.getNumMaxRondas() && numganadores == 0);
-			cp.comprobarPuntos(listaJug);
+			if (numganadores==0) {
+				cp.comprobarPuntos(listaJug);
+			}
 		}
 	}
 }
