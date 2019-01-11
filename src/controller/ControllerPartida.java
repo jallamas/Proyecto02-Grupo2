@@ -15,7 +15,7 @@ public class ControllerPartida {
 		if (aleatorio <= probmascomodin) {
 			ImprimirComodinObtenido.imprimirObtenerComodin();
 			darComodin(j1);
-		} else if (aleatorio > probmascomodin && aleatorio <= probrobarcomodin) {
+		} else if (aleatorio > probmascomodin && aleatorio <= (probmascomodin+probrobarcomodin)) {
 			ImprimirRobo.imprimirRobo();
 			robarComodin(j1,j2);
 		}
@@ -44,9 +44,22 @@ public class ControllerPartida {
 	}
 
 	public void limpiarPantalla() {
-		int lineas=10;
+		int lineas=5;
 		for (int i = 0; i < lineas; i++) {
 			System.out.println(" ");
+		}
+	}
+	
+	public void mostrarMarcador(int numjugadores, Jugador j1, Jugador[]listaJug) {
+		limpiarPantalla();
+		System.out.println("Así están los marcadores:\n");
+		for (int i = 0; i < numjugadores; i++) {
+			j1 = listaJug[i];
+			System.out.printf("%s: %d puntos.\n", j1.getNombre(), j1.getPuntuacion());
+		}
+		for (int i = 0; i < numjugadores; i++) {
+			j1 = listaJug[i];
+			System.out.printf("\nA %s le queda//n %d comodín/es.\n", j1.getNombre(), j1.getComodines());
 		}
 	}
 }

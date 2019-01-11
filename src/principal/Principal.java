@@ -11,6 +11,7 @@ import utilidades.Leer;
 import vista.ImprimirIntroduccion;
 import vista.ImprimirIntrucciones;
 import vista.ImprimirVictoria;
+import vista.TextosPrincipal;
 
 public class Principal {
 
@@ -46,7 +47,7 @@ public class Principal {
 			int rondaactual = 0;
 			int numganadores = 0;
 			int numeropregunta = 0;
-			int uno = 1, cuatro = 4;
+			int uno = 1, dos = 2, cuatro = 4;
 
 			// Pantallas iniciales
 
@@ -57,15 +58,15 @@ public class Principal {
 
 			// Pedimos los datos para crear la partida
 
-			System.out.println("\nIndique el número de jugadores (1-4)");
+			TextosPrincipal.indicarNumeroJugadores();
 			numjugadores = Leer.datoInt();
 			listaJug = new Jugador[numjugadores];
 
-			System.out.println("¿Cuántos puntos son necesarios para vencer?");
+			TextosPrincipal.pedirPuntosVictoria();
 			puntVictoria = Leer.datoInt();
 
 			for (int i = 0; i < numjugadores; i++) {
-				System.out.printf("Escriba el nombre del jugador %d", i + 1);
+				TextosPrincipal.pedirNombreJugador(i);
 				nombreJug = Leer.dato();
 				Jugador j = new Jugador(nombreJug, puntuacion, comodines, eleccion);
 				listaJug[i] = j;
@@ -78,11 +79,9 @@ public class Principal {
 			for (int i = 0; i < numjugadores; i++) {
 				j1 = listaJug[i];
 				conp.limpiarPantalla();
-				System.out.printf("Turno de %s.\n", j1.getNombre());
+				TextosPrincipal.indicarTurno(j1);
 				do {
-					System.out.println(
-							"Escriba [1] para elegir una pregunta normal.\nEscriba[2] para reto o pregunta específica.");
-
+					TextosPrincipal.elegirNormaloReto();
 					opcion = Leer.datoInt();
 					switch (opcion) {
 					case 1:
@@ -92,72 +91,59 @@ public class Principal {
 						j1.setEleccion(false);
 						break;
 					default:
-						System.out.println("Opción incorrecta.");
+						TextosPrincipal.mostrarOpcionIncorrecta();
+						break;
 					}
-				} while (opcion != 1 && opcion != 2);
+				} while (opcion != uno && opcion != dos);
 
 				numeropregunta = a1.imprimirPregunta(j1.isEleccion());
-				System.out.println("0. Usar un comodín.");
-				System.out.println("Elija la respuesta correcta o utilice un comodín:");
+				TextosPrincipal.pedirRespuestaoComodin();
 				opcion = Leer.datoInt();
 				if (opcion == 0 && j1.getComodines() == 0) {
-					System.out.println("Lo sentimos. No tienes comodines disponibles.");
+					TextosPrincipal.informarCeroComodines();
 					do {
-						System.out.println("Elige una respuesta.");
+						TextosPrincipal.pedirRespuesta();
 						a1.imprimirPreguntaSinComodin(j1.isEleccion(), numeropregunta);
 						opcion = Leer.datoInt();
 					} while (opcion < uno || opcion > cuatro);
 				}
 
-				cp.elegirSolucion(opcion,numeropregunta, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
+				cp.elegirSolucion(opcion, numeropregunta, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
 			}
-			conp.limpiarPantalla();
-			System.out.println("Así están los marcadores:\n");
-			for (int i = 0; i < numjugadores; i++) {
-				j1 = listaJug[i];
-				System.out.printf("%s: %d puntos.\n", j1.getNombre(), j1.getPuntuacion());
-			}
+			conp.mostrarMarcador(numjugadores, j1, listaJug);
 			if (cp.comprobarGanador(listaJug, puntVictoria) == 0) {
 				rondaactual = 1;
 				// SIGUIENTES RONDAS
 				do {
 					rondaactual++;
 					conp.limpiarPantalla();
-					System.out.printf("RONDA NÚMERO %d.\n", rondaactual);
+					TextosPrincipal.mostrarNumeroRonda(rondaactual);
 					for (int i = 0; i < numjugadores; i++) {
 						j1 = listaJug[i];
-						System.out.printf("Turno de %s.\n\n", j1.getNombre());
+						conp.limpiarPantalla();
+						TextosPrincipal.indicarTurno(j1);
 						cj.cambiarEleccion(j1);
 						if (j1.isEleccion() == true) {
-							System.out.println("Le toca una pregunta normal.\n");
+							TextosPrincipal.tocarNormal();
 						} else {
-							System.out.println("Le toca una pregunta específica o un reto.\n");
+							TextosPrincipal.tocarReto();
 						}
 						numeropregunta = a1.imprimirPregunta(j1.isEleccion());
-						System.out.println("0. Usar un comodín.");
-						System.out.println("\nElija la respuesta correcta o utilice un comodín:");
+						TextosPrincipal.pedirRespuestaoComodin();
 						opcion = Leer.datoInt();
 						if (opcion == 0 && j1.getComodines() == 0) {
-							System.out.println("Lo sentimos. No tienes comodines disponibles.");
+							TextosPrincipal.informarCeroComodines();
 							do {
-								System.out.println("Elige una respuesta.");
+								TextosPrincipal.pedirRespuesta();
 								a1.imprimirPreguntaSinComodin(j1.isEleccion(), numeropregunta);
 								opcion = Leer.datoInt();
 							} while (opcion < uno || opcion > cuatro);
 						}
 
-						cp.elegirSolucion(opcion,numeropregunta, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
+						cp.elegirSolucion(opcion, numeropregunta, j1.isEleccion(), j1, listaJug, probComodin,
+								probRobarComodin);
 					}
-					conp.limpiarPantalla();
-					System.out.println("Así están los marcadores:\n");
-					for (int i = 0; i < numjugadores; i++) {
-						j1 = listaJug[i];
-						System.out.printf("%s: %d puntos.\n", j1.getNombre(), j1.getPuntuacion());
-					}
-
-					for (int i = 0; i < numjugadores; i++) {
-						System.out.println(listaJug[i]);
-					}
+					conp.mostrarMarcador(numjugadores, j1, listaJug);
 					numganadores = cp.comprobarGanador(listaJug, puntVictoria);
 				} while (rondaactual < p.getNumMaxRondas() && numganadores == 0);
 				if (numganadores == 0) {
@@ -165,8 +151,7 @@ public class Principal {
 				}
 				ImprimirVictoria.imprimirVictoria();
 			}
-			System.out.println(
-					"¿Desea jugar otra partida?. Escriba [1] para jugar o cualquier otro número para terminar.");
+			TextosPrincipal.preguntarJugarOtra();
 			terminar = Leer.datoInt();
 		} while (terminar == 1);
 	}
