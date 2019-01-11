@@ -30,12 +30,12 @@ public class Crudpartida {
 			j.setPuntuacion(j.getPuntuacion() + 1);
 			System.out.println("Has usado un comodín.");
 			System.out.printf("Te quedan %d comodines", j.getComodines());
-		} 
+		}
 	}
 
 	// Respuesta o comodin
-	public void elegirSolucion(int opcion, int aleatorio,boolean eleccion, Jugador j, Jugador[] listajug, int probcomodin,
-			int probrobar) {
+	public void elegirSolucion(int opcion, int aleatorio, boolean eleccion, Jugador j, Jugador[] listajug,
+			int probcomodin, int probrobar) {
 		if (opcion == 0) {
 			usarComodin(j);
 		} else {
@@ -50,7 +50,7 @@ public class Crudpartida {
 		int numeroGanadores = 0;
 		for (int i = 0; i < lista.length; i++) {
 			if (lista[i].getPuntuacion() >= puntosVictoria) {
-				System.out.printf("\n\nENHORABUENA!!! %s, HAS GANADO!!!\n\n", lista[i].getNombre());
+				System.out.printf("\nENHORABUENA!!! %s, HAS GANADO!!!\n", lista[i].getNombre());
 				numeroGanadores++;
 			}
 		}

@@ -56,20 +56,20 @@ public class CrudActividades {
 		Actividades[] arrayRet = dp0.obtenerRetos();
 
 		if (elegir == true) {
-			if (arrayPre[aleatorio].getRespuestas()[opcion-1].getVerdaderoFalso() == true) { // PREGUNTAS
+			if (arrayPre[aleatorio].getRespuestas()[opcion - 1].getVerdaderoFalso() == true) { // PREGUNTAS
 				j1.setPuntuacion(j1.getPuntuacion() + uno);
 
 				System.out.println("Respuesta correcta");
 				controlp.generarEvento(j1, listajug, probcomodin, probrobar);
-			} else if (arrayPre[aleatorio].getRespuestas()[opcion-1].getVerdaderoFalso() == false) {
+			} else if (arrayPre[aleatorio].getRespuestas()[opcion - 1].getVerdaderoFalso() == false) {
 				System.out.println("Respuesta incorrecta");
 			}
 		} else if (elegir == false) { // RETOS
-			if (arrayRet[aleatorio].getRespuestas()[opcion-1].getVerdaderoFalso() == true) {
+			if (arrayRet[aleatorio].getRespuestas()[opcion - 1].getVerdaderoFalso() == true) {
 				j1.setPuntuacion(j1.getPuntuacion() + uno);
 				System.out.println("Respuesta correcta");
 				controlp.generarEvento(j1, listajug, probcomodin, probrobar);
-			} else if (arrayRet[aleatorio].getRespuestas()[opcion-1].getVerdaderoFalso() == false) {
+			} else if (arrayRet[aleatorio].getRespuestas()[opcion - 1].getVerdaderoFalso() == false) {
 				System.out.println("Respuesta incorrecta");
 			}
 		}
