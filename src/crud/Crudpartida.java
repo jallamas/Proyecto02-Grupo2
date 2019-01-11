@@ -3,7 +3,6 @@ package crud;
 import model.Actividades;
 import model.Jugador;
 import model.Partida;
-import java.util.Random;
 
 public class Crudpartida {
 
