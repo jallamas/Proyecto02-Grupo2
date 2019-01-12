@@ -9,7 +9,7 @@ public class Crudpartida {
 	public Crudpartida() {
 
 	}
-
+	/*CREA LA PARTIDA.*/
 	public Partida crearPartida(int numJug, int ptosVict, double probabilidadComodin, double probabilidadRobarComodin,
 			Jugador[] jugadores, Actividades[] listaPreguntas, Actividades[] listaRetos) {
 		int maxRondas = 0;
@@ -23,7 +23,7 @@ public class Crudpartida {
 		return p;
 	}
 
-	// Usar comodín
+	// USAR COMODÍN.
 	public void usarComodin(Jugador j) {
 		if (j.getComodines() > 0) {
 			j.setComodines(j.getComodines() - 1);
@@ -33,7 +33,7 @@ public class Crudpartida {
 		}
 	}
 
-	// Respuesta o comodin
+	// ELIGE ENTRE USAR RESPUESTA O COMODIN.
 	public void elegirSolucion(int opcion, int aleatorio, boolean eleccion, Jugador j, Jugador[] listajug,
 			int probcomodin, int probrobar) {
 		if (opcion == 0) {
@@ -44,7 +44,7 @@ public class Crudpartida {
 		}
 	}
 
-	// Comprobar ganador alcanzando objetivo
+	// COMPROBAR GANADOR ALCANZADO OBJETIVO.
 
 	public int comprobarGanador(Jugador[] lista, int puntosVictoria) {
 		int numeroGanadores = 0;
@@ -57,7 +57,7 @@ public class Crudpartida {
 		return numeroGanadores;
 	}
 
-	// Comprobar ganador por puntos alcanzado el máximo de rondas.
+	// COMPROBAR GANADOR POR PUNTOS ALCANZADO EL MÁXIMO DE RONDAS.
 
 	public void comprobarPuntos(Jugador[] lista) {
 		int puntosganador = 0;

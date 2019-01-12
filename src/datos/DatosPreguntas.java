@@ -9,7 +9,7 @@ public class DatosPreguntas {
 
 	}
 
-	// Aqui se encuentras las respuestas junto a sus preguntas
+	// AQUÍ SE ENCUENTRAN LAS RESPUESTAS JUNTO A LAS PREGUNTAS
 	// RESPUESTAS DE LAS PREGUNTAS, HAY 61 PREGUNTAS
 	// CREAMOS LAS RESPUESTAS A CADA PREGUNTA PASANDO EL TEXTO Y SI SON VERDADERAS O
 	// FALSAS

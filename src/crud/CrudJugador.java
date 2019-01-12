@@ -4,7 +4,7 @@ import model.Jugador;
 
 public class CrudJugador {
 
-	// Añadir un jugador
+	// CREAR JUGADOR 
 
 	public Jugador anyadirJugador(String nombre, int puntuacion, int comodinesactuales, boolean eleccion) {
 
@@ -12,7 +12,8 @@ public class CrudJugador {
 
 		return j;
 	}
-
+	
+	/*CAMBIA LA ELECCION DEL JUGADOR PARA LAS SIGUIENTES RONDAS*/
 	public void cambiarEleccion(Jugador j1) {
 		if (j1.isEleccion() == true) {
 			j1.setEleccion(false);

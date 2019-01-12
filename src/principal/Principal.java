@@ -65,13 +65,15 @@ public class Principal {
 
 			TextosPrincipal.pedirPuntosVictoria();
 			puntVictoria = Leer.datoInt();
-
+			
+			/*Rellenamos el Array de los jugadores*/
 			for (int i = cero; i < numjugadores; i++) {
 				TextosPrincipal.pedirNombreJugador(i);
 				nombreJug = Leer.dato();
 				Jugador j = new Jugador(nombreJug, puntuacion, comodines, eleccion);
 				listaJug[i] = j;
 			}
+			/*Creamos la partida*/
 			p = cp.crearPartida(numjugadores, puntVictoria, probComodin, probRobarComodin, listaJug,
 					dp0.obtenerPreguntas(), dp0.obtenerRetos());
 
@@ -119,6 +121,7 @@ public class Principal {
 			conp.mostrarMarcador(numjugadores, j1, listaJug);
 			if (cp.comprobarGanador(listaJug, puntVictoria) == cero) {
 				rondaactual = uno;
+				
 				// SIGUIENTES RONDAS
 				do {
 					rondaactual++;
