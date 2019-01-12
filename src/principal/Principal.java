@@ -17,6 +17,7 @@ public class Principal {
 
 	public static void main(String[] args) throws InterruptedException {
 		int terminar;
+		int uno = 1;
 		do {
 			// Variables con valor fijo
 			int puntuacion = 0; // Puntos con los que comienza un jugador
@@ -47,7 +48,7 @@ public class Principal {
 			int rondaactual = 0;
 			int numganadores = 0;
 			int numeropregunta = 0;
-			int uno = 1, dos = 2, cuatro = 4;
+			int cero = 0, dos = 2, cuatro = 4;
 
 			// Pantallas iniciales
 
@@ -65,7 +66,7 @@ public class Principal {
 			TextosPrincipal.pedirPuntosVictoria();
 			puntVictoria = Leer.datoInt();
 
-			for (int i = 0; i < numjugadores; i++) {
+			for (int i = cero; i < numjugadores; i++) {
 				TextosPrincipal.pedirNombreJugador(i);
 				nombreJug = Leer.dato();
 				Jugador j = new Jugador(nombreJug, puntuacion, comodines, eleccion);
@@ -76,7 +77,7 @@ public class Principal {
 
 			// PRIMERA RONDA
 			conp.limpiarPantalla();
-			for (int i = 0; i < numjugadores; i++) {
+			for (int i = cero; i < numjugadores; i++) {
 				j1 = listaJug[i];
 				conp.limpiarPantalla();
 				TextosPrincipal.indicarTurno(j1);
@@ -95,11 +96,16 @@ public class Principal {
 						break;
 					}
 				} while (opcion != uno && opcion != dos);
-
-				numeropregunta = a1.imprimirPregunta(j1.isEleccion());
-				TextosPrincipal.pedirRespuestaoComodin();
-				opcion = Leer.datoInt();
-				if (opcion == 0 && j1.getComodines() == 0) {
+				
+					numeropregunta = a1.imprimirPregunta(j1.isEleccion());
+					TextosPrincipal.pedirRespuestaoComodin();
+				do {
+					opcion = Leer.datoInt();
+					if(opcion < cero || opcion > cuatro) {
+						System.out.println("Por favor, introduzca una opción válida.");
+					}
+				}while(opcion < cero || opcion > cuatro);
+				if (opcion == cero && j1.getComodines() == cero) {
 					TextosPrincipal.informarCeroComodines();
 					do {
 						TextosPrincipal.pedirRespuesta();
@@ -111,14 +117,14 @@ public class Principal {
 				cp.elegirSolucion(opcion, numeropregunta, j1.isEleccion(), j1, listaJug, probComodin, probRobarComodin);
 			}
 			conp.mostrarMarcador(numjugadores, j1, listaJug);
-			if (cp.comprobarGanador(listaJug, puntVictoria) == 0) {
-				rondaactual = 1;
+			if (cp.comprobarGanador(listaJug, puntVictoria) == cero) {
+				rondaactual = uno;
 				// SIGUIENTES RONDAS
 				do {
 					rondaactual++;
 					conp.limpiarPantalla();
 					TextosPrincipal.mostrarNumeroRonda(rondaactual);
-					for (int i = 0; i < numjugadores; i++) {
+					for (int i = cero; i < numjugadores; i++) {
 						j1 = listaJug[i];
 						conp.limpiarPantalla();
 						TextosPrincipal.indicarTurno(j1);
@@ -130,8 +136,13 @@ public class Principal {
 						}
 						numeropregunta = a1.imprimirPregunta(j1.isEleccion());
 						TextosPrincipal.pedirRespuestaoComodin();
-						opcion = Leer.datoInt();
-						if (opcion == 0 && j1.getComodines() == 0) {
+						do {
+							opcion = Leer.datoInt();
+							if(opcion < cero || opcion > cuatro) {
+								System.out.println("Por favor, introduzca una opción válida.");
+							}
+						}while(opcion < cero || opcion > cuatro);
+						if (opcion == cero && j1.getComodines() == cero) {
 							TextosPrincipal.informarCeroComodines();
 							do {
 								TextosPrincipal.pedirRespuesta();
@@ -145,14 +156,14 @@ public class Principal {
 					}
 					conp.mostrarMarcador(numjugadores, j1, listaJug);
 					numganadores = cp.comprobarGanador(listaJug, puntVictoria);
-				} while (rondaactual < p.getNumMaxRondas() && numganadores == 0);
-				if (numganadores == 0) {
+				} while (rondaactual < p.getNumMaxRondas() && numganadores == cero);
+				if (numganadores == cero) {
 					cp.comprobarPuntos(listaJug);
 				}
 				ImprimirVictoria.imprimirVictoria();
 			}
 			TextosPrincipal.preguntarJugarOtra();
 			terminar = Leer.datoInt();
-		} while (terminar == 1);
+		} while (terminar == uno);
 	}
 }
