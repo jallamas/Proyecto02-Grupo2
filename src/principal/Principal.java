@@ -19,44 +19,48 @@ import vista.TextosPrincipal;
  * ALBERTO SANTIAGO RELACIONES PÚBLICAS
  * RICARDO MEJÍAS INVESTIGADOR
  ------------------------------------------------------------------------
-	12/12/2018
-
-	-Se realizaron los requisitos del proyecto
-	-Creación de las clases POIO en el paquete MODEL
-	-Distribución de Tareas
-
-	13/12/2018
 	
-	-Recoger información.
-	-Creación de Métodos
-	-Creación de las clases 
-	-Inicialización de Variables en el Main (Principal)
-	-Impresiones de Pantalla de Victoria, Instrucciones, Introducción y Array de jugadores.
-
-	Desde el día 13/12/2018 - Hasta el día 21/12/2018
+	- Se definieron los requisitos del proyecto (VÍCTOR Y JOSÉ ANTONIO)
+	- Distribución de Tareas (JOSÉ ANTONIO)
+	- Creación de las clases (JOSÉ ANTONIO, RICARDO Y VÍCTOR)
+	- Búsqueda de preguntas con sus respuestas correspondientes. (ALBERTO)
 	
-	-Organización de ideas sobre el Main (Clase principal).
-	-Búsqueda de preguntas con sus respuestas correspondientes.
-	-Creación de Arrays para Preguntas y Respuestas 
-	-Creación de otro Array para distinguir entre Pregunta y Reto
-	-Llamamientos hacia el Main.
-	-Creación de la partida con el número de jugadores, puntos de victoria,
-	 probabilidad de obtener un comodín, probabilidad de robar un comodín, la lista de jugadores
-	 y las preguntas y retos.
-	
-
-	Desde el día 21/12/2018 - Hasta el día 11/1/2019
-	
-	-Rellenar Arrays  de preguntas y respuestas
-	-Impresiones de robo de comodín y de obtención de comodín.
-	-Métodos de usar comodín, elegir responder o usar comodín, comprobar ganador alcanzando los puntos necesarios 
-	 y comprobar ganador por puntos alcanzado en el máximo de rondas, en Crud Partida.
-	-Método crear jugador  y alternar elección del jugador para las siguientes rondas, en Crud Jugador
-	-En Crud Actividades, método para imprimir preguntas con sus correspondientes respuestas de forma aleatoria, 
-	 un método para comprobar las respuestas correctas y otro método para imprimir preguntas en el caso de que 
-	 no se disponga de un comodín.
-	-Llamamientos al main, pedir datos a los jugadores para crear la partida y creación de la primera ronda 
-	 y de las siguientes a partir de esta.
+	CLASES:
+	- ControllerPartida:
+			* Método para obtener o robar un comodín según probabilidad (RICARDO)
+	 		* Método para sumar un comodín (JOSÉ ANTONIO)
+	 		* Método para sumar un comodín a un jugador y quitárselo a otro (JOSÉ ANTONIO)
+	 		* Método para separar con líneas en blanco (JOSÉ ANTONIO)
+	 		* Método mostrar el marcador de puntos y comodines (JOSÉ ANTONIO)
+	- CrudActividades:
+			* Método para imprimir preguntas con sus correspondientes respuestas de forma aleatoria (RICARDO)
+			* Método para comprobar las respuestas correctas (RICARDO)
+			* Método para imprimir de nuevo la misma pregunta en el caso de que no se disponga de un comodín (ALBERTO Y VÍCTOR)
+	- CrudJugador;
+	 		* Método para crear un jugador (JOSÉ ANTONIO)
+	 		* Método para alternar la elección del tipo de pregunta de un jugador de una ronda a otra. (JOSÉ ANTONIO)
+	- CrudPartida:
+			* Método que crea la partida (JOSÉ ANTONIO)
+			* Método para usar un comodín (JOSÉ ANTONIO)
+			* Método para elegir entre responder la pregunta o usar un comodín (JOSÉ ANTONIO)
+			* Método para comprobar ganador llegando al objetivo (JOSÉ ANTONIO)
+			* Método paras comprobar ganador alcanzando el máximo de rondas (JOSÉ ANTONIO)
+	- DatosPreguntas:
+			* Arrays de preguntas y respuestas (VÍCTOR)
+	- Model:
+			* Clases POJO definiendo objetos principales (JOSÉ ANTONIO)
+	- Principal:
+			* Construcción del Main (JOSÉ ANTONIO).
+			* Corrección de errores en algunas situaciones del desarrollo del programa (ALBERTO Y VÍCTOR)
+	- Vista:
+			* Método para imprimir imágen de ganar un comodín (VÍCTOR)
+			* Método para imprimir imágen de Introducción (RICARDO)
+			* Método para imprimir imágen de Instrucciones (RICARDO)
+			* Método para imprimir lista de jugadores (JOSÉ ANTONIO)
+			* Método para imprimir imágen de robar comodín (ALBERTO)
+			* Método para imprimir imágen de victoria (RICARDO)
+			* Método para imprimir textos durante la ejecución del programa (JOSÉ ANTONIO)
+	 		
 	 */
 
 public class Principal {
@@ -111,15 +115,15 @@ public class Principal {
 
 			TextosPrincipal.pedirPuntosVictoria();
 			puntVictoria = Leer.datoInt();
-			
-			/*Rellenamos el Array de los jugadores*/
+
+			/* Rellenamos el Array de los jugadores */
 			for (int i = cero; i < numjugadores; i++) {
 				TextosPrincipal.pedirNombreJugador(i);
 				nombreJug = Leer.dato();
 				Jugador j = new Jugador(nombreJug, puntuacion, comodines, eleccion);
 				listaJug[i] = j;
 			}
-			/*Creamos la partida*/
+			/* Creamos la partida */
 			p = cp.crearPartida(numjugadores, puntVictoria, probComodin, probRobarComodin, listaJug,
 					dp0.obtenerPreguntas(), dp0.obtenerRetos());
 
@@ -144,15 +148,15 @@ public class Principal {
 						break;
 					}
 				} while (opcion != uno && opcion != dos);
-				
-					numeropregunta = a1.imprimirPregunta(j1.isEleccion());
-					TextosPrincipal.pedirRespuestaoComodin();
+
+				numeropregunta = a1.imprimirPregunta(j1.isEleccion());
+				TextosPrincipal.pedirRespuestaoComodin();
 				do {
 					opcion = Leer.datoInt();
-					if(opcion < cero || opcion > cuatro) {
-						System.out.println("Por favor, introduzca una opción válida.");
+					if (opcion < cero || opcion > cuatro) {
+						TextosPrincipal.mostrarOpcionIncorrecta();
 					}
-				}while(opcion < cero || opcion > cuatro);
+				} while (opcion < cero || opcion > cuatro);
 				if (opcion == cero && j1.getComodines() == cero) {
 					TextosPrincipal.informarCeroComodines();
 					do {
@@ -167,7 +171,7 @@ public class Principal {
 			conp.mostrarMarcador(numjugadores, j1, listaJug);
 			if (cp.comprobarGanador(listaJug, puntVictoria) == cero) {
 				rondaactual = uno;
-				
+
 				// SIGUIENTES RONDAS
 				do {
 					rondaactual++;
@@ -187,10 +191,10 @@ public class Principal {
 						TextosPrincipal.pedirRespuestaoComodin();
 						do {
 							opcion = Leer.datoInt();
-							if(opcion < cero || opcion > cuatro) {
-								System.out.println("Por favor, introduzca una opción válida.");
+							if (opcion < cero || opcion > cuatro) {
+								TextosPrincipal.mostrarOpcionIncorrecta();
 							}
-						}while(opcion < cero || opcion > cuatro);
+						} while (opcion < cero || opcion > cuatro);
 						if (opcion == cero && j1.getComodines() == cero) {
 							TextosPrincipal.informarCeroComodines();
 							do {

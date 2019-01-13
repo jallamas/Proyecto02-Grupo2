@@ -33,7 +33,7 @@ public class TextosPrincipal {
 	}
 
 	public static void mostrarOpcionIncorrecta() {
-		System.out.println("Opción incorrecta.");
+		System.out.println("Por favor, introduzca una opción válida.");
 	}
 
 	public static void pedirRespuestaoComodin() {

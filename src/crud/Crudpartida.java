@@ -9,7 +9,8 @@ public class Crudpartida {
 	public Crudpartida() {
 
 	}
-	/*CREA LA PARTIDA.*/
+
+	/* CREA LA PARTIDA. */
 	public Partida crearPartida(int numJug, int ptosVict, double probabilidadComodin, double probabilidadRobarComodin,
 			Jugador[] jugadores, Actividades[] listaPreguntas, Actividades[] listaRetos) {
 		int maxRondas = 0;

@@ -12,7 +12,7 @@ public class CrudActividades {
 
 	DatosPreguntas dp0 = new DatosPreguntas();
 
-	/*IMPRIMIR PREGUNTA CON SUS CORRESPONDIENTES RESPUESTAS*/
+	/* IMPRIMIR PREGUNTA CON SUS CORRESPONDIENTES RESPUESTAS */
 	public int imprimirPregunta(boolean opcion) {
 		// Variables auxiliares
 		int tam = 4;
@@ -47,7 +47,7 @@ public class CrudActividades {
 
 	}
 
-	/*COMPROBAR LA RESPUESTA CORRECTA*/
+	/* COMPROBAR LA RESPUESTA CORRECTA */
 	public void comprobarRespuesta(int opcion, int aleatorio, boolean elegir, Jugador j1, Jugador[] listajug,
 			int probcomodin, int probrobar) {
 		// Variables auxiliares
@@ -76,7 +76,7 @@ public class CrudActividades {
 		}
 	}
 
-	/*IMPRIMIR PREGUNTA EN EL CASO DE QUE NO SE DISPONGA DE UN COMODÍN.*/
+	/* IMPRIMIR PREGUNTA EN EL CASO DE QUE NO SE DISPONGA DE UN COMODÍN. */
 	public int imprimirPreguntaSinComodin(boolean opcion, int numeropregunta) {
 		// Variables auxiliares
 		int tam = 4;
