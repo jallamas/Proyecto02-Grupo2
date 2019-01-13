@@ -15,7 +15,9 @@ public class TextosPrincipal {
 	public static void indicarNumeroJugadores() {
 		System.out.println("\nIndique el número de jugadores (1-4)");
 	}
-
+	public static void ElegirNumeroJugadoresCorrecto() {
+		System.out.println("El número de jugadores ha de estar entre 1 y 4.");
+	}
 	public static void pedirPuntosVictoria() {
 		System.out.println("¿Cuántos puntos son necesarios para vencer?");
 	}
@@ -29,7 +31,7 @@ public class TextosPrincipal {
 	}
 
 	public static void elegirNormaloReto() {
-		System.out.println("Escriba [1] para elegir una pregunta normal.\nEscriba[2] para reto o pregunta específica.");
+		System.out.println("Escriba [1] para elegir una pregunta normal.\nEscriba [2] para reto o pregunta específica.");
 	}
 
 	public static void mostrarOpcionIncorrecta() {

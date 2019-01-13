@@ -36,7 +36,7 @@ public class ControllerPartida {
 		int opcion;
 		int uno = 1;
 		darComodin(j);
-		ImprimirJugadores.ImprimirJugadores(j2);
+		ImprimirJugadores.ImprimirListaJugadores(j2);
 		do {
 			System.out.println("Elija una opción");
 			opcion = Leer.datoInt();

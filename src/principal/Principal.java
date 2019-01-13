@@ -28,8 +28,8 @@ import vista.TextosPrincipal;
 	CLASES:
 	- ControllerPartida:
 			* Método para obtener o robar un comodín según probabilidad (RICARDO)
-	 		* Método para sumar un comodín (JOSÉ ANTONIO)
-	 		* Método para sumar un comodín a un jugador y quitárselo a otro (JOSÉ ANTONIO)
+	 		* Método para sumar un comodín (JOSÉ ANTONIO Y RICARDO)
+	 		* Método para sumar un comodín a un jugador y quitárselo a otro (JOSÉ ANTONIO Y RICARDO)
 	 		* Método para separar con líneas en blanco (JOSÉ ANTONIO)
 	 		* Método mostrar el marcador de puntos y comodines (JOSÉ ANTONIO)
 	- CrudActividades:
@@ -40,7 +40,7 @@ import vista.TextosPrincipal;
 	 		* Método para crear un jugador (JOSÉ ANTONIO)
 	 		* Método para alternar la elección del tipo de pregunta de un jugador de una ronda a otra. (JOSÉ ANTONIO)
 	- CrudPartida:
-			* Método que crea la partida (JOSÉ ANTONIO)
+			* Método que crea la partida (ALBERTO)
 			* Método para usar un comodín (JOSÉ ANTONIO)
 			* Método para elegir entre responder la pregunta o usar un comodín (JOSÉ ANTONIO)
 			* Método para comprobar ganador llegando al objetivo (JOSÉ ANTONIO)
@@ -74,9 +74,9 @@ public class Principal {
 			int comodines = 1; // Número de comodines con los que comienza la partida un jugador
 			boolean eleccion = true; // True si ha elegido pregunta común y False si ha elegido Reto o pregunta
 										// específica.
-			int probComodin = 20; // Porcentaje de probabilidad de que te "toque" un comodín al responder
+			int probComodin = 15; // Porcentaje de probabilidad de que te "toque" un comodín al responder
 									// correctamente una pregunta
-			int probRobarComodin = 20; // Porcentaje de probabilidad de que se te permita "robar" un comodín a un
+			int probRobarComodin = 15; // Porcentaje de probabilidad de que se te permita "robar" un comodín a un
 										// compañero al responder correctamente una pregunta
 
 			// Variables para crear la partida
@@ -110,7 +110,12 @@ public class Principal {
 			// Pedimos los datos para crear la partida
 
 			TextosPrincipal.indicarNumeroJugadores();
-			numjugadores = Leer.datoInt();
+			do {
+				numjugadores = Leer.datoInt();
+				if(numjugadores < uno || numjugadores > cuatro) {
+				TextosPrincipal.ElegirNumeroJugadoresCorrecto();
+				}
+			}while (numjugadores < uno || numjugadores > cuatro);
 			listaJug = new Jugador[numjugadores];
 
 			TextosPrincipal.pedirPuntosVictoria();
