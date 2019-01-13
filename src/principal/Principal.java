@@ -13,6 +13,52 @@ import vista.ImprimirIntrucciones;
 import vista.ImprimirVictoria;
 import vista.TextosPrincipal;
 
+/*PROYECTO REALIZADO POR EL GRUPO 2, COMPUESTO POR:
+ * JOSÉ ANTONIO LLAMAS EL COORDINADOR
+ * VÍCTOR MIRANDA ENCARGADO DEL MANTENIMIENTO/SECRETARIO
+ * ALBERTO SANTIAGO RELACIONES PÚBLICAS
+ * RICARDO MEJÍAS INVESTIGADOR
+ ------------------------------------------------------------------------
+	12/12/2018
+
+	-Se realizaron los requisitos del proyecto
+	-Creación de las clases POIO en el paquete MODEL
+	-Distribución de Tareas
+
+	13/12/2018
+	
+	-Recoger información.
+	-Creación de Métodos
+	-Creación de las clases 
+	-Inicialización de Variables en el Main (Principal)
+	-Impresiones de Pantalla de Victoria, Instrucciones, Introducción y Array de jugadores.
+
+	Desde el día 13/12/2018 - Hasta el día 21/12/2018
+	
+	-Organización de ideas sobre el Main (Clase principal).
+	-Búsqueda de preguntas con sus respuestas correspondientes.
+	-Creación de Arrays para Preguntas y Respuestas 
+	-Creación de otro Array para distinguir entre Pregunta y Reto
+	-Llamamientos hacia el Main.
+	-Creación de la partida con el número de jugadores, puntos de victoria,
+	 probabilidad de obtener un comodín, probabilidad de robar un comodín, la lista de jugadores
+	 y las preguntas y retos.
+	
+
+	Desde el día 21/12/2018 - Hasta el día 11/1/2019
+	
+	-Rellenar Arrays  de preguntas y respuestas
+	-Impresiones de robo de comodín y de obtención de comodín.
+	-Métodos de usar comodín, elegir responder o usar comodín, comprobar ganador alcanzando los puntos necesarios 
+	 y comprobar ganador por puntos alcanzado en el máximo de rondas, en Crud Partida.
+	-Método crear jugador  y alternar elección del jugador para las siguientes rondas, en Crud Jugador
+	-En Crud Actividades, método para imprimir preguntas con sus correspondientes respuestas de forma aleatoria, 
+	 un método para comprobar las respuestas correctas y otro método para imprimir preguntas en el caso de que 
+	 no se disponga de un comodín.
+	-Llamamientos al main, pedir datos a los jugadores para crear la partida y creación de la primera ronda 
+	 y de las siguientes a partir de esta.
+	 */
+
 public class Principal {
 
 	public static void main(String[] args) throws InterruptedException {
