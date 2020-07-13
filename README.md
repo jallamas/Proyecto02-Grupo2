@@ -1,2 +1,5 @@
-# Proyecto02-Grupo2
-Proyecto de Programación del Tema 3 DAM
+# Quizzer
+## Proyecto Conjunto de Java sin Base de Datos
+
+Realizado para comprobar el funcionamiento de los arrays en Java
+
